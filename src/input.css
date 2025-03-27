@@ -1,0 +1,4 @@
+@import url('https://fonts.cdnfonts.com/css/anuphan');
+@import "tailwindcss";
+
+@theme {  --font-anuphan: "Anuphan", sans-serif; }

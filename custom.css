@@ -1,0 +1,27 @@
+a[aria-current="active"] {
+    background-color: #2c2d33;
+}
+
+.current-menu-item a {
+    background-color: #2c2d33;
+}
+
+a {
+    text-decoration: none !important;
+}
+
+.button{
+    padding: 12px 18px;
+}
+
+.col-ssr{
+   color: #d7bc57;
+}
+
+.text-ssr{
+    text-decoration-color: #f7d882;;
+}
+
+.bg-ssr{
+    background-color: #d7bc57;
+}
