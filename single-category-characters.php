@@ -92,7 +92,7 @@
                 <div class="flex flex-col h-full border-2 border-[#33343a] bg-[#23242a] overflow-y-auto overflow-x-hidden">
                     <div class="grid grid-cols-[20%_80%] gap-2 w-full h-22 bg-[#2c2d33] justify-between items-center">
                         <div class="flex h-[96%] bg-ssr text-[#303030] items-center justify-center font-semibold text-[Anuphan]">
-                            SKill 1
+                            Skill 1
                         </div>
                         <div class="flex flex-col items-start p-2 h-full">
                             <p class="font-bold text-white text-[Anuphan]">Fairy Dance</p>
@@ -164,11 +164,123 @@
 
         </div>
 
+        <div class="flex flex-row items-center mt-[25px] mb-[15px] pb-[6px] border-b-2"
+        style="border-color: #d7bc57;">
+            <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="square" class="svg-inline--fa fa-square " role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" width="18">
+                <path fill="#d7bc57" d="M0 96C0 60.65 28.65 32 64 32H384C419.3 32 448 60.65 448 96V416C448 451.3 419.3 480 384 480H64C28.65 480 0 451.3 0 416V96z"></path>
+            </svg>
+            <h2 class="uppercase ml-2 text-white font-[Anuphan] font-bold text-[20px]">Specialties</h2>
+        </div>
+        <div class="flex flex-wrap items-center transition-all">
+            <div class="flex items-center py-2 px-3 mb-3 mr-3 border-b-4 border-[#484950] cursor-pointer bg-[#36373d] opacity-80 hover:opacity-100 duration-700 text-white">
+                Buffer
+            </div>
+
+        </div>
+
+        <div class="flex flex-row items-center mt-[25px] mb-[15px] pb-[6px] border-b-2"
+        style="border-color: #d7bc57;">
+            <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="square" class="svg-inline--fa fa-square " role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" width="18">
+                <path fill="#d7bc57" d="M0 96C0 60.65 28.65 32 64 32H384C419.3 32 448 60.65 448 96V416C448 451.3 419.3 480 384 480H64C28.65 480 0 451.3 0 416V96z"></path>
+            </svg>
+            <h2 class="uppercase ml-2 text-white font-[Anuphan] font-bold text-[20px]">Voice Actors</h2>
+        </div>
+        <div class="flex flex-wrap items-center">
+            <div class="w-1/3 mb-3 px-3 h-16">
+                <div class="flex flex-col justify-center items-center h-full p-2 bg-[#2c2d33] border-1 border-[#33343a] text-white font-[Anuphan] ">
+                    <p class="opacity-75 uppercase font-semibold text-[14px]">ENG</p>
+                    <p class="font-semibold">Corina Boettger</p>
+                </div>
+            </div>
+            <div class="w-1/3 mb-3 px-3 h-16">
+                <div class="flex flex-col justify-center items-center h-full p-2 bg-[#2c2d33] border-1 border-[#33343a] text-white font-[Anuphan] ">
+                    <p class="opacity-75 uppercase font-semibold text-[14px]">JPN</p>
+                    <p class="font-semibold">Satomi Sato</p>
+                </div>
+            </div>
+            <div class="w-1/3 mb-3 px-3 h-16">
+                <div class="flex flex-col justify-center items-center h-full p-2 bg-[#2c2d33] border-1 border-[#33343a] text-white font-[Anuphan] ">
+                    <p class="opacity-75 uppercase font-semibold text-[14px]">KR</p>
+                    <p class="font-semibold">Kim Yeon-woo</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="flex flex-row items-center mt-[25px] mb-[15px] pb-[6px] border-b-2"
+        style="border-color: #d7bc57;">
+            <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="square" class="svg-inline--fa fa-square " role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" width="18">
+                <path fill="#d7bc57" d="M0 96C0 60.65 28.65 32 64 32H384C419.3 32 448 60.65 448 96V416C448 451.3 419.3 480 384 480H64C28.65 480 0 451.3 0 416V96z"></path>
+            </svg>
+            <h2 class="uppercase ml-2 text-white font-[Anuphan] font-bold text-[20px]">Gallery</h2>
+        </div>
+        <div class="relative flex flex-wrap">
+            <img src="http://localhost/wordpress/wp-content/uploads/2025/03/anne_full.png">
+
+        </div>
+
     </div>
     
     <div id="Review">
+        <div class="flex flex-row items-center mt-[25px] mb-[15px] pb-[6px] border-b-2"
+        style="border-color: #d7bc57;">
+            <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="square" class="svg-inline--fa fa-square " role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" width="18">
+                <path fill="#d7bc57" d="M0 96C0 60.65 28.65 32 64 32H384C419.3 32 448 60.65 448 96V416C448 451.3 419.3 480 384 480H64C28.65 480 0 451.3 0 416V96z"></path>
+            </svg>
+            <h2 class="uppercase ml-2 text-white font-[Anuphan] font-bold text-[20px]">Review</h2>
+        </div>
+        <div class="h-21 bg-[#2b2c31] border-1 border-[#33343a] p-4">
+            <p class="text-white font-[Anuphan]"> Review text...</p>
+        </div>
+
+
+        <div class="flex flex-row items-center mt-[25px] mb-[15px] pb-[6px] border-b-2"
+        style="border-color: #d7bc57;">
+            <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="square" class="svg-inline--fa fa-square " role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" width="18">
+                <path fill="#d7bc57" d="M0 96C0 60.65 28.65 32 64 32H384C419.3 32 448 60.65 448 96V416C448 451.3 419.3 480 384 480H64C28.65 480 0 451.3 0 416V96z"></path>
+            </svg>
+            <h2 class="uppercase ml-2 text-white font-[Anuphan] font-bold text-[20px]">Ratings</h2>
+        </div>
+        <div class="flex flex-wrap justify-between items-center text-white font-[Anuphan] transition-all">
+            <div class="w-1/5 items-start">
+                <div class="flex px-4 py-3 mb-2 bg-[#bfff7f] justify-center font-bold text-[24px] text-black cursor-pointer duration-700 hover:brightness-120">
+                    D
+                </div>
+                <div class="flex justify-center">
+                    <p>Story (low deficit)</p>
+                </div>
+            </div>
+
+            <div class="w-1/5">
+                <div class="flex px-4 py-3 mb-2 bg-[#bfff7f] justify-center font-bold text-[24px] text-black cursor-pointer duration-700 hover:brightness-120">
+                    D
+                </div>
+                <div class="flex justify-center">
+                    <p>Story (high deficit)</p>
+                </div>
+            </div>
+
+            <div class="w-1/5">
+                <div class="flex px-4 py-3 mb-2 bg-[#ffff7f] justify-center font-bold text-[24px] text-black cursor-pointer duration-700 hover:brightness-120">
+                    C
+                </div>
+                <div class="flex justify-center">
+                    <p>Bossing</p>
+                </div>
+            </div>
+
+            <div class="w-1/5 items-end">
+                <div class="flex px-4 py-3 mb-2 bg-[#ff7f7f] justify-center font-bold text-[24px] text-black cursor-pointer duration-700 hover:brightness-120">
+                    S
+                </div>
+                <div class="flex justify-center">
+                    <p>PVP</p>
+                </div>
+            </div>
+
+        </div>
 
     </div>
+    
     <div id="Investment tips">
 
     </div>
