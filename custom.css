@@ -25,3 +25,28 @@ a {
 .bg-ssr{
     background-color: #d7bc57;
 }
+
+.yellow{
+    color: #ffde7a;
+    opacity: 100%;
+}
+
+.red {
+    color: #ff5f5a;
+    opacity: 100%;
+}
+
+.blue {
+    color: #34d0ff;
+    opacity: 100%;
+}
+
+.purple {
+    color: #c956ff;
+    opacity: 100%;
+}
+
+.green{
+    color: #83ff72;
+    opacity: 100%;
+}

@@ -51,7 +51,7 @@
 </div>
 
 <div>
-    <div id="Profile">
+    <div id="profile">
         <div class="flex flex-row items-center mt-[25px] mb-[15px] pb-[6px] border-b-2"
         style="border-color: #d7bc57;">
             <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="square" class="svg-inline--fa fa-square " role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" width="18">
@@ -61,19 +61,19 @@
         </div>
         <div class="flex flex-wrap text-[Anuphan]">
 
-            <div id="NormalATK" class="h-70 w-1/2 mb-5 px-3">
+            <div id="NormalATK" class="h-min-70 w-full xl:w-1/2 mb-5 px-3">
 
-                <div class="flex flex-col h-full border-2 border-[#33343a] bg-[#23242a] overflow-y-auto overflow-x-hidden">
-                    <div class="grid grid-cols-[20%_80%] gap-2 w-full h-22 bg-[#2c2d33] justify-between items-center">
-                        <div class="flex h-[96%] bg-ssr text-[#303030] items-center justify-center font-semibold text-[Anuphan]">
+                <div class="flex flex-col h-min-1/2 md:h-full border-2 border-[#33343a] bg-[#23242a] overflow-x-hidden">
+                    <div class="grid grid-cols-[100%] md:grid-cols-[20%_80%] md:gap-2 w-full h-22 bg-[#2c2d33] justify-center md:justify-between items-center">
+                        <div class="flex h-9 md:h-[96%] w-full bg-ssr text-[#303030] items-center justify-center font-semibold text-[Anuphan]">
                             Normal Attack
                         </div>
-                        <div class="flex flex-col items-start p-2 h-full">
+                        <div class="flex flex-col justify-center md:justify-start items-center mb-1 md:mb-0 md:items-start md:p-2 h-full">
                             <p class="font-bold text-white text-[Anuphan]">Normal Attack</p>
                             <p class="text-sm text-[hsla(0,0%,100%,.75)] text-[Anuphan]">Rocket Launcher</p>
                         </div>
                     </div>
-                    <div class="grid grid-cols-[33%_33%_33%] justify-between h-8 px-2 bg-[#36373d]">
+                    <div class="grid md:grid-cols-[33%_33%_33%] justify-between h-min-8 px-2 bg-[#36373d]">
                         <p class="text-[hsla(0,0%,100%,.75)] text-sm">Mode: <span class="text-white text-sm font-semibold">Charge</span></p>
                         <p class="text-[hsla(0,0%,100%,.75)] text-sm">Ammo: <span class="text-white text-sm font-semibold">6</span></p>
                         <p class="text-[hsla(0,0%,100%,.75)] text-sm">Reload: <span class="text-white text-sm font-semibold">2s</span></p>
@@ -87,19 +87,19 @@
 
             </div>
 
-            <div id="Skill1" class="h-70 w-1/2 mb-5 px-3">
+            <div id="Skill1" class="h-min-70 w-full xl:w-1/2 mb-5 px-3">
 
-                <div class="flex flex-col h-full border-2 border-[#33343a] bg-[#23242a] overflow-y-auto overflow-x-hidden">
-                    <div class="grid grid-cols-[20%_80%] gap-2 w-full h-22 bg-[#2c2d33] justify-between items-center">
-                        <div class="flex h-[96%] bg-ssr text-[#303030] items-center justify-center font-semibold text-[Anuphan]">
+                <div class="flex flex-col h-full border-2 border-[#33343a] bg-[#23242a] overflow-x-hidden">
+                    <div class="grid grid-cols-[100%] md:grid-cols-[20%_80%] md:gap-2 w-full h-22 bg-[#2c2d33] justify-center md:justify-between items-center">
+                        <div class="flex h-9 md:h-[96%] w-full bg-ssr text-[#303030] items-center justify-center font-semibold text-[Anuphan]">
                             Skill 1
                         </div>
-                        <div class="flex flex-col items-start p-2 h-full">
+                        <div class="flex flex-col justify-center md:justify-start items-center mb-1 md:mb-0 md:items-start md:p-2 h-full">
                             <p class="font-bold text-white text-[Anuphan]">Fairy Dance</p>
                             <p class="text-sm text-[hsla(0,0%,100%,.75)] text-[Anuphan]">Passive</p>
                         </div>
                     </div>
-                    <div class="grid grid-cols-[33%_33%_33%] justify-between h-8 px-2 bg-[#36373d]">
+                    <div class="grid md:grid-cols-[33%_33%_33%] justify-between h-min-8 px-2 bg-[#36373d]">
                         <p class="text-[hsla(0,0%,100%,.75)] text-sm">Cooldown: <span class="text-white text-sm font-semibold">-</span></p>
                     </div>
                     <div class="h-full p-4">
@@ -110,19 +110,19 @@
 
             </div>
 
-            <div id="Skill2" class="h-70 w-1/2 mb-5 px-3">
+            <div id="Skill2" class="h-min-70 w-full xl:w-1/2 mb-5 px-3">
 
-                <div class="flex flex-col h-full border-2 border-[#33343a] bg-[#23242a] overflow-y-auto overflow-x-hidden">
-                    <div class="grid grid-cols-[20%_80%] gap-2 w-full h-22 bg-[#2c2d33] justify-between items-center">
-                        <div class="flex h-[96%] bg-ssr text-[#303030] items-center justify-center font-semibold text-[Anuphan]">
+                <div class="flex flex-col h-full border-2 border-[#33343a] bg-[#23242a] overflow-x-hidden">
+                    <div class="grid grid-cols-[100%] md:grid-cols-[20%_80%] md:gap-2 w-full h-22 bg-[#2c2d33] justify-center md:justify-between items-center">
+                        <div class="flex h-9 md:h-[96%] w-full bg-ssr text-[#303030] items-center justify-center font-semibold text-[Anuphan]">
                             Skill 2
                         </div>
-                        <div class="flex flex-col items-start p-2 h-full">
+                        <div class="flex flex-col justify-center md:justify-start items-center mb-1 md:mb-0 md:items-start md:p-2 h-full">
                             <p class="font-bold text-white text-[Anuphan]">Fairy's Jest</p>
                             <p class="text-sm text-[hsla(0,0%,100%,.75)] text-[Anuphan]">Passive</p>
                         </div>
                     </div>
-                    <div class="grid grid-cols-[33%_33%_33%] justify-between h-8 px-2 bg-[#36373d]">
+                    <div class="grid md:grid-cols-[33%_33%_33%] justify-between h-min-8 px-2 bg-[#36373d]">
                         <p class="text-[hsla(0,0%,100%,.75)] text-sm">Cooldown: <span class="text-white text-sm font-semibold">-</span></p>
                     </div>
                     <div class="h-full p-4">
@@ -135,19 +135,19 @@
 
             </div>
 
-            <div id="Burst" class="h-70 w-1/2 mb-5 px-3">
+            <div id="Burst" class="h-min-70 w-full xl:w-1/2 mb-5 px-3">
 
-                <div class="flex flex-col h-full border-2 border-[#33343a] bg-[#23242a] overflow-y-auto overflow-x-hidden">
-                    <div class="grid grid-cols-[20%_80%] gap-2 w-full h-22 bg-[#2c2d33] justify-between items-center">
-                        <div class="flex h-[96%] bg-ssr text-[#303030] items-center justify-center font-semibold text-[Anuphan]">
+                <div class="flex flex-col h-full border-2 border-[#33343a] bg-[#23242a] overflow-x-hidden">
+                    <div class="grid grid-cols-[100%] md:grid-cols-[20%_80%] md:gap-2 w-full h-22 bg-[#2c2d33] justify-center md:justify-between items-center">
+                        <div class="flex h-9 md:h-[96%] w-full bg-ssr text-[#303030] items-center justify-center font-semibold text-[Anuphan]">
                             Burst
                         </div>
-                        <div class="flex flex-col items-start p-2 h-full">
+                        <div class="flex flex-col justify-center md:justify-start items-center mb-1 md:mb-0 md:items-start md:p-2 h-full">
                             <p class="font-bold text-white text-[Anuphan]">Blue Butterfly Slumber</p>
                             <p class="text-sm text-[hsla(0,0%,100%,.75)] text-[Anuphan]">Rocket Launcher</p>
                         </div>
                     </div>
-                    <div class="grid grid-cols-[33%_33%_33%] justify-between h-8 px-2 bg-[#36373d]">
+                    <div class="grid md:grid-cols-[33%_33%_33%] justify-between h-min-8 px-2 bg-[#36373d]">
                         <p class="text-[hsla(0,0%,100%,.75)] text-sm">Cooldown: <span class="text-white text-sm font-semibold">60s</span></p>
                     </div>
                     <div class="h-full p-4">
@@ -186,19 +186,19 @@
             <h2 class="uppercase ml-2 text-white font-[Anuphan] font-bold text-[20px]">Voice Actors</h2>
         </div>
         <div class="flex flex-wrap items-center">
-            <div class="w-1/3 mb-3 px-3 h-16">
+            <div class="w-full md:w-1/3 mb-3 px-3 h-16">
                 <div class="flex flex-col justify-center items-center h-full p-2 bg-[#2c2d33] border-1 border-[#33343a] text-white font-[Anuphan] ">
                     <p class="opacity-75 uppercase font-semibold text-[14px]">ENG</p>
                     <p class="font-semibold">Corina Boettger</p>
                 </div>
             </div>
-            <div class="w-1/3 mb-3 px-3 h-16">
+            <div class="w-full md:w-1/3 mb-3 px-3 h-16">
                 <div class="flex flex-col justify-center items-center h-full p-2 bg-[#2c2d33] border-1 border-[#33343a] text-white font-[Anuphan] ">
                     <p class="opacity-75 uppercase font-semibold text-[14px]">JPN</p>
                     <p class="font-semibold">Satomi Sato</p>
                 </div>
             </div>
-            <div class="w-1/3 mb-3 px-3 h-16">
+            <div class="w-full md:w-1/3 mb-3 px-3 h-16">
                 <div class="flex flex-col justify-center items-center h-full p-2 bg-[#2c2d33] border-1 border-[#33343a] text-white font-[Anuphan] ">
                     <p class="opacity-75 uppercase font-semibold text-[14px]">KR</p>
                     <p class="font-semibold">Kim Yeon-woo</p>
@@ -220,7 +220,7 @@
 
     </div>
     
-    <div id="Review">
+    <div id="review">
         <div class="flex flex-row items-center mt-[25px] mb-[15px] pb-[6px] border-b-2"
         style="border-color: #d7bc57;">
             <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="square" class="svg-inline--fa fa-square " role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" width="18">
@@ -228,7 +228,7 @@
             </svg>
             <h2 class="uppercase ml-2 text-white font-[Anuphan] font-bold text-[20px]">Review</h2>
         </div>
-        <div class="h-21 bg-[#2b2c31] border-1 border-[#33343a] p-4">
+        <div class="h-min-21 bg-[#2b2c31] border-1 border-[#33343a] p-4">
             <p class="text-white font-[Anuphan]"> Review text...</p>
         </div>
 
@@ -241,8 +241,8 @@
             <h2 class="uppercase ml-2 text-white font-[Anuphan] font-bold text-[20px]">Ratings</h2>
         </div>
         <div class="flex flex-wrap justify-between items-center text-white font-[Anuphan] transition-all">
-            <div class="w-1/5 items-start">
-                <div class="flex px-4 py-3 mb-2 bg-[#bfff7f] justify-center font-bold text-[24px] text-black cursor-pointer duration-700 hover:brightness-120">
+            <div class="w-[49%] md:w-1/5 items-start mb-2">
+                <div class="flex px-2 md:px-4 py-2 md:py-3 mb-2 bg-[#bfff7f] justify-center font-bold text-[20px] md:text-[24px] text-black cursor-pointer duration-700 hover:brightness-120">
                     D
                 </div>
                 <div class="flex justify-center">
@@ -250,8 +250,8 @@
                 </div>
             </div>
 
-            <div class="w-1/5">
-                <div class="flex px-4 py-3 mb-2 bg-[#bfff7f] justify-center font-bold text-[24px] text-black cursor-pointer duration-700 hover:brightness-120">
+            <div class="w-[49%] md:w-1/5 mb-2">
+                <div class="flex px-2 md:px-4 py-2 md:py-3 mb-2 bg-[#bfff7f] justify-center font-bold text-[20px] md:text-[24px] text-black cursor-pointer duration-700 hover:brightness-120">
                     D
                 </div>
                 <div class="flex justify-center">
@@ -259,8 +259,8 @@
                 </div>
             </div>
 
-            <div class="w-1/5">
-                <div class="flex px-4 py-3 mb-2 bg-[#ffff7f] justify-center font-bold text-[24px] text-black cursor-pointer duration-700 hover:brightness-120">
+            <div class="w-[49%] md:w-1/5 mb-2">
+                <div class="flex px-2 md:px-4 py-2 md:py-3 mb-2 bg-[#ffff7f] justify-center font-bold text-[20px] md:text-[24px] text-black cursor-pointer duration-700 hover:brightness-120">
                     C
                 </div>
                 <div class="flex justify-center">
@@ -268,8 +268,8 @@
                 </div>
             </div>
 
-            <div class="w-1/5 items-end">
-                <div class="flex px-4 py-3 mb-2 bg-[#ff7f7f] justify-center font-bold text-[24px] text-black cursor-pointer duration-700 hover:brightness-120">
+            <div class="w-[49%] md:w-1/5 items-end mb-2">
+                <div class="flex px-2 md:px-4 py-2 md:py-3 mb-2 bg-[#ff7f7f] justify-center font-bold text-[20px] md:text-[24px] text-black cursor-pointer duration-700 hover:brightness-120">
                     S
                 </div>
                 <div class="flex justify-center">
@@ -281,8 +281,222 @@
 
     </div>
     
-    <div id="Investment tips">
+    <div id="investment_tips">
 
+        <div class="flex flex-row items-center mt-[25px] mb-[15px] pb-[6px] border-b-2"
+        style="border-color: #d7bc57;">
+            <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="square" class="svg-inline--fa fa-square " role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" width="18">
+                <path fill="#d7bc57" d="M0 96C0 60.65 28.65 32 64 32H384C419.3 32 448 60.65 448 96V416C448 451.3 419.3 480 384 480H64C28.65 480 0 451.3 0 416V96z"></path>
+            </svg>
+            <h2 class="uppercase ml-2 text-white font-[Anuphan] font-bold text-[20px]">Skill Investment</h2>
+        </div>
+        <div class="my-3 border-1 border-[#484950]">
+            <div class="h-13 bg-[#36373d] cursor-pointer">
+                <div class="flex flex-row h-full w-full py-1 px-4 items-center justify-between text-white font-[Anuphan]">
+                    <h2 class="justify-start">Skill Investment explained</h2>
+                    <svg class="justify-end rotate-y-180" style="transform: scaleY(1);" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="24"> <path fill="currentColor" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"</svg>
+                </div>
+            </div>
+            <div id="skill_explanation" class="h-min-128 bg-[#2c2d33] py-5 px-6 text-white font-[Anuphan] leading-6.5 hidden">
+                <p class="mb-3">Here's the explanation for all the numbers and colors used in the guide:</p>
+                <ul class="pl-4 mb-4 list-disc">
+                    <li><strong>10/5/7 </strong> means upgrading Skill 1 to lvl 10, Skill 2 to lvl 5, and Burst Skill to lvl 7,</li>
+                    <li><strong class="yellow">Yellow</strong> means the immediate investment when u get the unit. There are 3 reasons for this:
+                    <ul class="pl-8" style="list-style-type: circle;">
+                        <li>If the unit is Meta or High Priority, it will have a starting investment of more than 1/1/1 (such as 4/4/4) depending on what the unit provides.</li>
+                        <li>If the unit is Medium or Low Priority, 1/1/1 will be mentioned, meaning no immediate investment is required, and you can invest in this character if you need to use it according to the priority listed.</li>
+                        <li>If we deem that a unit does not have usable skills to be meta for any gamemode, no investment will be mentioned.</li>
+                    </ul></li>
+
+                    <li><strong class="blue">Blue</strong> means minimum investment to take advantage of the Nikke's skills. There are 2 reasons for this:</li>
+                    <ul class="pl-8" style="list-style-type: circle;">
+                        <li>Sometimes, minimum investments are breakpoints such as for Noir or SAnis.</li>
+                        <li>Sometimes, minimum investments are just the ideal way to progress to upgrade that unit, before moving on to Recommended and High.</li>
+                    </ul>
+                    <li><strong class="red">Red</strong> means recommended investment for F2P players,</li>
+                    <li><strong class="purple">Purple</strong> means maximum recommended investment, in order to get the best out of the unit. You should only try to reach these investments if you have a surplus of Skill Books leftover.</li>
+                </ul>
+                <p class="mb-3">More info:</p>
+                <ul class="pl-4 mb-4 list-disc">
+                    <li>The skill investment list below features a lot of Level 4 and 7 because they are easier to understand. Any higher levels will cost a new type of resource.</li>
+                    <li>However, you may choose to upgrade to Level 5 if you need a stronger effect instead of 4, as the increase in Blue Manual cost from Level 4 to 5 is still low. The leap only starts from Level 6 onward.</li>
+                    <li>There is also a leap from Level 3 to 4, so if you want to save a tiny bit of Blue Manuals, then leave at 3 instead of 4.</li>
+                </ul>
+                
+            </div>
+        </div>
+
+        <div class="h-min-28 mt-6 text-white font-[Anuphan]">
+            <div class="hidden h-12 md:grid grid-cols-[25%_30%_30%_15%] border-x-1 border-b-1 border-[#484950] justify-between items-center text-[14px]">
+                <div class="h-full flex border-t-1 border-r-1 border-[#484950] items-center justify-center">
+                    <p class="uppercase opacity-75">Character</p>
+                </div>
+                <div class="h-full flex border-t-1 border-r-1 border-[#484950] items-center justify-center">
+                    <p class="uppercase opacity-75">PVE Investment</p>
+                </div>
+                <div class="h-full flex border-t-1 border-r-1 border-[#484950] justify-center items-center justify-center">
+                    <p class="uppercase opacity-75">PVP Investment</p>
+                </div>
+                <div class="h-full flex border-t-1 border-[#484950] items-center justify-center">
+                    <p class="uppercase opacity-75">Priority</p>
+                </div>
+            </div>
+            <div class="h-min-16 md:h-16 grid md:grid-cols-[25%_30%_30%_15%] gap-3 md:gap-0 bg-[#36373d] justify-center md:justify-between border-t-1 md:border-t-0 border-x-1 border-b border-[#484950] text-[14px] py-2 md:py-0">
+                <div class="h-16 flex md:border-r-1 border-[#484950] items-center justify-center md:justify-start text-[16px] cursor-pointer">
+                    <div class="h-full w-15 mr-1.25 border-b-3 bg-white border-[#ffde7a]"></div>
+                    <span><?php echo get_the_title($post->ID)?></span>
+                </div>
+                <div class="h-full flex flex-col md:border-r-1 border-[#484950] items-center justify-center">
+                    <p class="md:hidden opacity-75 text-[13px]">PVE investment</p>
+                    <p><strong class="yellow">1/1/1</strong> → <strong class="red">4/4/4</strong> (→ <strong class="purple">4/4/7</strong>)</p>
+                </div>
+                <div class="h-full flex flex-col md:border-r-1 border-[#484950] items-center justify-center">
+                    <p class="md:hidden opacity-75 text-[13px]">PVP investment</p>
+                    <p><strong class="yellow">1/1/1</strong> → <strong class="blue">4/4/4</strong> → <strong class="red">4/4/7</strong> (→ <strong class="purple">4/4/10</strong>)</p>
+                </div>
+                <div class="h-full flex flex-col border-[#484950] items-center justify-center">
+                    <p class="md:hidden opacity-75 text-[13px]">Priority</p>
+                    <p class="blue">PVP</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="flex flex-row items-center mt-[25px] mb-[15px] pb-[6px] border-b-2"
+        style="border-color: #d7bc57;">
+            <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="square" class="svg-inline--fa fa-square " role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" width="18">
+                <path fill="#d7bc57" d="M0 96C0 60.65 28.65 32 64 32H384C419.3 32 448 60.65 448 96V416C448 451.3 419.3 480 384 480H64C28.65 480 0 451.3 0 416V96z"></path>
+            </svg>
+            <h2 class="uppercase ml-2 text-white font-[Anuphan] font-bold text-[20px]">Gear Investment</h2>
+        </div>
+        <div class="my-3 border-1 border-[#484950]">
+            <div class="h-13 bg-[#36373d] cursor-pointer">
+                <div class="flex flex-row h-full w-full py-1 px-4 items-center justify-between text-white font-[Anuphan]">
+                    <h2 class="justify-start">Gear Investment explained</h2>
+                    <svg class="justify-end rotate-y-180" style="transform: scaleY(1);" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="24"> <path fill="currentColor" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"</svg>
+                </div>
+            </div>
+            <div id="gear_explanation" class="h-min-64 bg-[#2c2d33] py-5 px-6 text-white font-[Anuphan] leading-6.5 hidden">
+                <p class="mb-3">This Overload (OL) Recommendations and Priority guide unravels in detail everything you need about a character in terms of priority, overload targets (effects), and order of acquisition, alongside some notes to explain our thinking process.</p>
+                <p class="mb-3">For OL targets and order of acquisition, we decided to divide the target effects into several categories.</p>
+                <ul class="pl-4 mb-4 list-disc">
+                    <li><strong>Essential: </strong>With all gear combined, your unit must have the roll(s) prescribed as a minimum requirement. Example: Charge Speed on Alice. You cannot compromise on these rolls.</li>
+                    <li><strong>Ideal: </strong>These rolls will improve your unit's performance significantly. Aim for 2 lines of Essential/Ideal per gear for maximum performance and the best Return on Investment (ROI). If you get 3, you are lucky. You can choose to only have 1 as well to save materials. Example: Elemental Damage on Scarlet.</li>
+
+                    <li><strong>Passable: </strong>Low-priority line that has either limited value or the impact is not as strong as other rolls. Should this show up as a bonus together with a better line, you can choose to keep them. Example: Charge Speed on Red Hood.</li>
+                </ul>
+                <p class="mb-3">Overload effects are ordered by importance from Left to Right, which means anything on the left provides more value than the right. Effects that belong to the same group generate too similar an impact to make a difference (and are sometimes interchangeable). Try to follow this order as faithfully as possible for maximum mileage.</p>
+                <p class="mb-4"><strong>Additional tips:</strong></p>
+                <ul class="pl-4 mb-4 list-disc">
+                    <li>Priority (PvE/PvP) isn't necessarily lower than Priority (Universal), which has no tag/label. It just indicates that this unit performs only in select types of content.</li>
+                    <li>If a suggested effect has the number ×2 next to it, that means you should get the effect on at least 2 gear. The same idea applies to other numbers.</li>
+                    <li>Focus on obtaining Essential(s) then you can start worrying about optimizing your rolls. Units require these to function, and the impact is too massive to ignore.</li>
+                    <li>If a unit has no Essential(s), that means their performance is not that dependent on OL, but they can still benefit from good effects.</li>
+                    <li>Remember that this is just a recommendation list, and attaining perfection is impossible. You will have to make some compromise, pick whichever rolls you desire the most, and conserve as much material as possible.</li>
+                </ul>
+                
+            </div>
+        </div>
+
+        <div class="h-min-28 mt-6 text-white font-[Anuphan]">
+            <div class="hidden h-12 md:grid grid-cols-[15%_25%_25%_25%_10%] border-x-1 border-b-1 border-[#484950] justify-between items-center text-[14px]">
+                <div class="h-full flex border-t-1 border-r-1 border-[#484950] items-center justify-center">
+                    <p class="uppercase">Character</p>
+                </div>
+                <div class="h-full flex border-t-1 border-r-1 border-[#484950] items-center justify-center">
+                    <p class="uppercase">Essential</p>
+                </div>
+                <div class="h-full flex border-t-1 border-r-1 border-[#484950] justify-center items-center justify-center">
+                    <p class="uppercase">Ideal</p>
+                </div>
+                <div class="h-full flex border-t-1 border-r-1 border-[#484950] items-center justify-center">
+                    <p class="uppercase">Passable</p>
+                </div>
+                <div class="h-full flex border-t-1 border-[#484950] items-center justify-center">
+                    <p class="uppercase">Priority</p>
+                </div>
+            </div>
+            <div class="h-min-16 md:h-16 grid md:grid-cols-[15%_25%_25%_25%_10%] gap-3 md:gap-0 bg-[#2c2d33] justify-center md:justify-between border-t-1 md:border-t-0 border-x-1 border-b border-[#484950] text-[14px] py-2 md:py-0">
+                <div class="h-16 flex md:border-r-1 border-[#484950] items-center justify-center md:justify-start text-[16px] cursor-pointer">
+                    <div class="h-full w-15 mr-1.25 border-b-3 bg-white border-[#ffde7a]"></div>
+                    <span><?php echo get_the_title($post->ID)?></span>
+                </div>
+                <div class="h-full flex flex-col md:border-r-1 border-[#484950] items-center justify-center">
+                    <p class="md:hidden opacity-75 text-[13px]">Essential</p>
+                    <p>-</p>
+                </div>
+                <div class="h-full flex flex-col md:border-r-1 border-[#484950] items-center justify-center">
+                    <p class="md:hidden opacity-75 text-[13px]">Ideal</p>
+                    <p><strong>4× Charge Speed</strong></p>
+                </div>
+                <div class="h-full flex flex-col md:border-r-1 border-[#484950] items-center justify-center">
+                    <p class="md:hidden opacity-75 text-[13px]">Passable</p>
+                    <p><strong>4× ATK, 4× Elemental Damage, 4× DEF</strong></p>
+                </div>
+                <div class="h-full flex flex-col items-center justify-center">
+                    <p class="md:hidden opacity-75 text-[13px]">Priority</p>
+                    <p class="yellow">Low (PVP)</p>
+                </div>
+                <div class="h-full flex flex-col items-center justify-center">
+                    <p class="md:hidden ">CP Padding</p>
+                </div>
+            </div>
+            <div class="hidden md:flex bg-[#36373d] border-x-1 border-b-1 border-[#484950] text-[14px] p-2">
+                <p>CP Padding</p>
+            </div>
+        </div>
+
+        <div class="flex flex-row items-center mt-[25px] mb-[15px] pb-[6px] border-b-2"
+        style="border-color: #d7bc57;">
+            <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="square" class="svg-inline--fa fa-square " role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" width="18">
+                <path fill="#d7bc57" d="M0 96C0 60.65 28.65 32 64 32H384C419.3 32 448 60.65 448 96V416C448 451.3 419.3 480 384 480H64C28.65 480 0 451.3 0 416V96z"></path>
+            </svg>
+            <h2 class="uppercase ml-2 text-white font-[Anuphan] font-bold text-[20px]">Cube Investment</h2>
+        </div>
+        <div class="w-full h-min-50 grid md:grid-cols-[50%_50%] gap-2 md:gap-0 font-[Anuphan] text-white my-5">
+            <div class="h-full border-y-2 border-l-1 border-r-2 border-[#484950]">
+                <div class="h-12 w-full flex bg-[#a592fc] text-black text-center items-center justify-center font-bold text-[18px]">
+                    <p>Pre-overload</p>
+                </div>
+                <div class="h-min-20 p-3">
+                    <div class="flex items-center justify-start">
+                        <div class="h-15 w-15 bg-white"></div>
+                        <p>Adjutant Cube</p>
+                    </div>
+                    <div class="flex items-center justify-start">
+                        <div class="h-15 w-15 bg-white"></div>
+                        <p>Resilience Cube</p>
+                    </div>
+                    <div class="flex items-center justify-start">
+                        <div class="h-15 w-15 bg-white"></div>
+                        <p>Wingman Cube</p>
+                    </div>
+                    
+                </div>
+            </div>
+            <div class="h-full border-y-2 border-l-1 border-r-2 border-[#484950]">
+                <div class="h-12 w-full flex bg-[#ff8ab5] text-black text-center items-center justify-center font-bold text-[18px]">
+                    <p>Post-overload</p>
+                </div>
+                <div class="h-min-20 p-3">
+                    <div class="flex items-center justify-start">
+                        <div class="h-15 w-15 bg-white"></div>
+                        <p>Adjutant Cube</p>
+                    </div>
+                    <div class="flex items-center justify-start">
+                        <div class="h-15 w-15 bg-white"></div>
+                        <p>Resilience Cube</p>
+                    </div>
+                    <div class="flex items-center justify-start">
+                        <div class="h-15 w-15 bg-white"></div>
+                        <p>Wingman Cube</p>
+                    </div>
+                    
+                </div>
+            </div>            
+        </div>
+        <div class="text-white font-[Anuphan]">
+            <p>XAnee cube of choice depends on how you use her - if you can make sure she will stay above 90% HP for her S2 to trigger, use Adjutant Cube on her. Otherwise, go with the generic Resilience or Wingman Cubes.</p>
+        </div>
     </div>
 
 </div>

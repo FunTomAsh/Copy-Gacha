@@ -20,6 +20,12 @@ add_action('after_setup_theme', 'adder');
 set_post_thumbnail_size(300, 200, true);
 add_image_size('Medium', 180, 246, true);
 
+function li_circle(){
+    echo ('<svg class="inline justify-center" height="10" width="10" xmlns="http://www.w3.org/2000/svg"><circle r="3" cx="5" cy="5" fill="white" /> </svg> ');
+}
+function li_circle_empty(){
+    echo ('<svg class="inline justify-center" height="10" width="10" xmlns="http://www.w3.org/2000/svg"><circle r="3" cx="5" cy="5"  stroke="white" stroke-width="1"/> </svg> ');
+}
 
 function register_custom_menu() {
     register_nav_menu('primary', __('Primary Menu', 'tailwind'));
