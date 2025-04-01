@@ -31,22 +31,28 @@
     <?php the_content() ?>
 </div>
 
-<div class="flex flex-row space-x-2 justify-between mt-12 mb-5 transition-all font-[Anuphan] text-[18px]">
-    <div class="flex flex-col items-center justify-center w-1/3 h-20 p-1 border-2 border-b-5 border-[#484950] border-b-[#d7bc57] bg-[#36373d] cursor-pointer duration-700 opacity-100">
-        <div class="flex h-10 w-10 bg-ssr justify-center mt-[-24px]">
-            <svg aria-hidden="true" focusable="false" data-icon="circle-info" class="justify-center" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="18"><path fill="currentColor" d="M256 0C114.6 0 0 114.6 0 256s114.6 256 256 256s256-114.6 256-256S397.4 0 256 0zM256 128c17.67 0 32 14.33 32 32c0 17.67-14.33 32-32 32S224 177.7 224 160C224 142.3 238.3 128 256 128zM296 384h-80C202.8 384 192 373.3 192 360s10.75-24 24-24h16v-64H224c-13.25 0-24-10.75-24-24S210.8 224 224 224h32c13.25 0 24 10.75 24 24v88h16c13.25 0 24 10.75 24 24S309.3 384 296 384z"></path></svg>
+<div class="flex flex-wrap mt-12 mb-5 transition-all font-[Anuphan] text-[16px] md:text-[18px]">
+    <div class="w-1/2 sm:w-1/3 h-21 p-1 ">
+        <div class="h-full w-full flex flex-col items-center p-1 justify-center border-2 border-b-5 border-[#484950] border-b-[#d7bc57] bg-[#36373d] cursor-pointer duration-700 opacity-100">
+            <div class="flex h-7 w-7 md:h-10 md:w-10 bg-ssr justify-center mt-[2] md:mt-[-24px] mx-auto md:mx-0">
+                <svg aria-hidden="true" focusable="false" data-icon="circle-info" class="justify-center" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="18"><path fill="currentColor" d="M256 0C114.6 0 0 114.6 0 256s114.6 256 256 256s256-114.6 256-256S397.4 0 256 0zM256 128c17.67 0 32 14.33 32 32c0 17.67-14.33 32-32 32S224 177.7 224 160C224 142.3 238.3 128 256 128zM296 384h-80C202.8 384 192 373.3 192 360s10.75-24 24-24h16v-64H224c-13.25 0-24-10.75-24-24S210.8 224 224 224h32c13.25 0 24 10.75 24 24v88h16c13.25 0 24 10.75 24 24S309.3 384 296 384z"></path></svg>
+            </div>
+            <p class="md:uppercase text-white md:font-bold m-1 md:mt-2">Profile</p>
         </div>
-        <p class="uppercase text-white font-bold mt-2">Profile</p>
     </div>
-    <div class="flex flex-col items-center justify-center w-1/3 h-20 p-1 border-2 border-b-5 border-[#33343a] border-b-[#484950] bg-[#2c2d33] cursor-pointer duration-700 opacity-70 hover:opacity-100">
-        <div class="flex h-10 w-10 bg-ssr justify-center mt-[-24px]">
-            <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="book" class="svg-inline--fa fa-book " role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" width="18"><path fill="currentColor" d="M448 336v-288C448 21.49 426.5 0 400 0H96C42.98 0 0 42.98 0 96v320c0 53.02 42.98 96 96 96h320c17.67 0 32-14.33 32-31.1c0-11.72-6.607-21.52-16-27.1v-81.36C441.8 362.8 448 350.2 448 336zM143.1 128h192C344.8 128 352 135.2 352 144C352 152.8 344.8 160 336 160H143.1C135.2 160 128 152.8 128 144C128 135.2 135.2 128 143.1 128zM143.1 192h192C344.8 192 352 199.2 352 208C352 216.8 344.8 224 336 224H143.1C135.2 224 128 216.8 128 208C128 199.2 135.2 192 143.1 192zM384 448H96c-17.67 0-32-14.33-32-32c0-17.67 14.33-32 32-32h288V448z"></path></svg>        </div>
-        <p class="uppercase text-white font-bold mt-2">Review</p>
+    <div class="w-1/2 sm:w-1/3 h-21 p-1 ">
+        <div class="flex flex-col h-full w-full items-center justify-center p-1 border-2 border-b-5 border-[#33343a] border-b-[#484950] bg-[#2c2d33] cursor-pointer duration-700 opacity-70 hover:opacity-100">
+            <div class="flex h-7 w-7 md:h-10 md:w-10 bg-ssr justify-center mt-[2] md:mt-[-24px] mx-auto md:mx-0">
+                <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="book" class="svg-inline--fa fa-book " role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" width="18"><path fill="currentColor" d="M448 336v-288C448 21.49 426.5 0 400 0H96C42.98 0 0 42.98 0 96v320c0 53.02 42.98 96 96 96h320c17.67 0 32-14.33 32-31.1c0-11.72-6.607-21.52-16-27.1v-81.36C441.8 362.8 448 350.2 448 336zM143.1 128h192C344.8 128 352 135.2 352 144C352 152.8 344.8 160 336 160H143.1C135.2 160 128 152.8 128 144C128 135.2 135.2 128 143.1 128zM143.1 192h192C344.8 192 352 199.2 352 208C352 216.8 344.8 224 336 224H143.1C135.2 224 128 216.8 128 208C128 199.2 135.2 192 143.1 192zM384 448H96c-17.67 0-32-14.33-32-32c0-17.67 14.33-32 32-32h288V448z"></path></svg>        </div>
+            <p class="md:uppercase text-white md:font-bold m-1 md:mt-2">Review</p>
+        </div>
     </div>
-    <div class="flex flex-col items-center justify-center w-1/3 h-20 p-1 border-2 border-b-5 border-[#33343a] border-b-[#484950] bg-[#2c2d33] cursor-pointer duration-700 opacity-70 hover:opacity-100">
-        <div class="flex h-10 w-10 bg-ssr justify-center mt-[-24px]">
-            <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="diagram-project" class="svg-inline--fa fa-diagram-project " role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" width="18"><path fill="currentColor" d="M0 80C0 53.49 21.49 32 48 32H144C170.5 32 192 53.49 192 80V96H384V80C384 53.49 405.5 32 432 32H528C554.5 32 576 53.49 576 80V176C576 202.5 554.5 224 528 224H432C405.5 224 384 202.5 384 176V160H192V176C192 177.7 191.9 179.4 191.7 180.1L272 288H368C394.5 288 416 309.5 416 336V432C416 458.5 394.5 480 368 480H272C245.5 480 224 458.5 224 432V336C224 334.3 224.1 332.6 224.3 331L144 224H48C21.49 224 0 202.5 0 176V80z"></path></svg>        </div>
-        <p class="uppercase text-white font-bold mt-2">Investment tips</p>
+    <div class="w-1/2 sm:w-1/3 h-21 p-1 ">
+        <div class="flex flex-col h-full w-full items-center justify-center p-1 border-2 border-b-5 border-[#33343a] border-b-[#484950] bg-[#2c2d33] cursor-pointer duration-700 opacity-70 hover:opacity-100">
+            <div class="flex h-7 w-7 md:h-10 md:w-10 bg-ssr justify-center mt-[2] md:mt-[-24px] mx-auto md:mx-0">
+                <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="diagram-project" class="svg-inline--fa fa-diagram-project " role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" width="18"><path fill="currentColor" d="M0 80C0 53.49 21.49 32 48 32H144C170.5 32 192 53.49 192 80V96H384V80C384 53.49 405.5 32 432 32H528C554.5 32 576 53.49 576 80V176C576 202.5 554.5 224 528 224H432C405.5 224 384 202.5 384 176V160H192V176C192 177.7 191.9 179.4 191.7 180.1L272 288H368C394.5 288 416 309.5 416 336V432C416 458.5 394.5 480 368 480H272C245.5 480 224 458.5 224 432V336C224 334.3 224.1 332.6 224.3 331L144 224H48C21.49 224 0 202.5 0 176V80z"></path></svg>        </div>
+            <p class="md:uppercase text-white md:font-bold m-1 md:mt-2">Investment tips</p>
+        </div>
     </div>
 </div>
 
