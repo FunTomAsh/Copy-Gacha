@@ -27,13 +27,31 @@
     </div>
 </div>
 
-<div class="text-white font-[Anuphan] text-[18px]">
+<?php
+    $character_icon = get_field('charcter_icon');
+    $rarity = get_field('rarity');
+    $fav_item = get_field('favorite_item');
+    $tier_SL = get_field('story_low_deficit');
+    $tier_SH = get_field('story_high_deficit');
+    $tier_B = get_field('bossing');
+    $tier_PVP = get_field('pvp');
+    $role = get_field('role');
+    $burst = get_field('burst');
+    $burst_cd = get_field('burst_cd');
+    $weapon = get_field('weapon');
+    $element = get_field('element');
+    $faction = get_field('faction');
+?>
+
+<div class="text-white font-[Anuphan] text-[18px] mb-3">
     <?php the_content() ?>
 </div>
 
+<p class="text-white font-[Anuphan] text-[18px] mb-3">To learn more about <span class="col-ssr font-bold"><?php echo get_the_title($post->ID)?></span> check the sections below. <strong>Use the tabs</strong> to quickly switch to the kind of information you're looking for.</p>
+
 <div class="flex flex-wrap mt-12 mb-5 transition-all font-[Anuphan] text-[16px] md:text-[18px]">
     <div class="w-1/2 sm:w-1/3 h-21 p-1 ">
-        <div class="h-full w-full flex flex-col items-center p-1 justify-center border-2 border-b-5 border-[#484950] border-b-[#d7bc57] bg-[#36373d] cursor-pointer duration-700 opacity-100">
+        <div id="profile-button" class="h-full w-full flex flex-col items-center p-1 justify-center border-2 border-b-5 border-[#484950] border-b-[#d7bc57] bg-[#36373d] cursor-pointer duration-700 hover:opacity-100 opacity-100">
             <div class="flex h-7 w-7 md:h-10 md:w-10 bg-ssr justify-center mt-[2] md:mt-[-24px] mx-auto md:mx-0">
                 <svg aria-hidden="true" focusable="false" data-icon="circle-info" class="justify-center" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="18"><path fill="currentColor" d="M256 0C114.6 0 0 114.6 0 256s114.6 256 256 256s256-114.6 256-256S397.4 0 256 0zM256 128c17.67 0 32 14.33 32 32c0 17.67-14.33 32-32 32S224 177.7 224 160C224 142.3 238.3 128 256 128zM296 384h-80C202.8 384 192 373.3 192 360s10.75-24 24-24h16v-64H224c-13.25 0-24-10.75-24-24S210.8 224 224 224h32c13.25 0 24 10.75 24 24v88h16c13.25 0 24 10.75 24 24S309.3 384 296 384z"></path></svg>
             </div>
@@ -41,14 +59,14 @@
         </div>
     </div>
     <div class="w-1/2 sm:w-1/3 h-21 p-1 ">
-        <div class="flex flex-col h-full w-full items-center justify-center p-1 border-2 border-b-5 border-[#33343a] border-b-[#484950] bg-[#2c2d33] cursor-pointer duration-700 opacity-70 hover:opacity-100">
+        <div id="review-button" class="flex flex-col h-full w-full items-center justify-center p-1 border-2 border-b-5 border-[#33343a] border-b-[#484950] bg-[#2c2d33] cursor-pointer duration-700 opacity-70 hover:opacity-100">
             <div class="flex h-7 w-7 md:h-10 md:w-10 bg-ssr justify-center mt-[2] md:mt-[-24px] mx-auto md:mx-0">
                 <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="book" class="svg-inline--fa fa-book " role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" width="18"><path fill="currentColor" d="M448 336v-288C448 21.49 426.5 0 400 0H96C42.98 0 0 42.98 0 96v320c0 53.02 42.98 96 96 96h320c17.67 0 32-14.33 32-31.1c0-11.72-6.607-21.52-16-27.1v-81.36C441.8 362.8 448 350.2 448 336zM143.1 128h192C344.8 128 352 135.2 352 144C352 152.8 344.8 160 336 160H143.1C135.2 160 128 152.8 128 144C128 135.2 135.2 128 143.1 128zM143.1 192h192C344.8 192 352 199.2 352 208C352 216.8 344.8 224 336 224H143.1C135.2 224 128 216.8 128 208C128 199.2 135.2 192 143.1 192zM384 448H96c-17.67 0-32-14.33-32-32c0-17.67 14.33-32 32-32h288V448z"></path></svg>        </div>
             <p class="md:uppercase text-white md:font-bold m-1 md:mt-2">Review</p>
         </div>
     </div>
     <div class="w-1/2 sm:w-1/3 h-21 p-1 ">
-        <div class="flex flex-col h-full w-full items-center justify-center p-1 border-2 border-b-5 border-[#33343a] border-b-[#484950] bg-[#2c2d33] cursor-pointer duration-700 opacity-70 hover:opacity-100">
+        <div id="invest-button" class="flex flex-col h-full w-full items-center justify-center p-1 border-2 border-b-5 border-[#33343a] border-b-[#484950] bg-[#2c2d33] cursor-pointer duration-700 opacity-70 hover:opacity-100">
             <div class="flex h-7 w-7 md:h-10 md:w-10 bg-ssr justify-center mt-[2] md:mt-[-24px] mx-auto md:mx-0">
                 <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="diagram-project" class="svg-inline--fa fa-diagram-project " role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" width="18"><path fill="currentColor" d="M0 80C0 53.49 21.49 32 48 32H144C170.5 32 192 53.49 192 80V96H384V80C384 53.49 405.5 32 432 32H528C554.5 32 576 53.49 576 80V176C576 202.5 554.5 224 528 224H432C405.5 224 384 202.5 384 176V160H192V176C192 177.7 191.9 179.4 191.7 180.1L272 288H368C394.5 288 416 309.5 416 336V432C416 458.5 394.5 480 368 480H272C245.5 480 224 458.5 224 432V336C224 334.3 224.1 332.6 224.3 331L144 224H48C21.49 224 0 202.5 0 176V80z"></path></svg>        </div>
             <p class="md:uppercase text-white md:font-bold m-1 md:mt-2">Investment tips</p>
@@ -57,7 +75,7 @@
 </div>
 
 <div>
-    <div id="profile">
+    <div id="profile" class="">
         <div class="flex flex-row items-center mt-[25px] mb-[15px] pb-[6px] border-b-2"
         style="border-color: #d7bc57;">
             <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="square" class="svg-inline--fa fa-square " role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" width="18">
@@ -76,7 +94,7 @@
                         </div>
                         <div class="flex flex-col justify-center md:justify-start items-center mb-1 md:mb-0 md:items-start md:p-2 h-full">
                             <p class="font-bold text-white text-[Anuphan]">Normal Attack</p>
-                            <p class="text-sm text-[hsla(0,0%,100%,.75)] text-[Anuphan]">Rocket Launcher</p>
+                            <p class="text-sm text-[hsla(0,0%,100%,.75)] text-[Anuphan]"><?php echo esc_html($weapon) ?></p>
                         </div>
                     </div>
                     <div class="grid md:grid-cols-[33%_33%_33%] justify-between h-min-8 px-2 bg-[#36373d]">
@@ -154,7 +172,7 @@
                         </div>
                     </div>
                     <div class="grid md:grid-cols-[33%_33%_33%] justify-between h-min-8 px-2 bg-[#36373d]">
-                        <p class="text-[hsla(0,0%,100%,.75)] text-sm">Cooldown: <span class="text-white text-sm font-semibold">60s</span></p>
+                        <p class="text-[hsla(0,0%,100%,.75)] text-sm">Cooldown: <span class="text-white text-sm font-semibold"><?php echo esc_html($burst_cd) ?></span></p>
                     </div>
                     <div class="h-full p-4">
                         <p class="text-white mb-2">■ Affects 1 random fallen Attacker ally unit(s) randomly.</p>
@@ -226,7 +244,7 @@
 
     </div>
     
-    <div id="review">
+    <div id="review" class="hidden">
         <div class="flex flex-row items-center mt-[25px] mb-[15px] pb-[6px] border-b-2"
         style="border-color: #d7bc57;">
             <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="square" class="svg-inline--fa fa-square " role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" width="18">
@@ -248,36 +266,28 @@
         </div>
         <div class="flex flex-wrap justify-between items-center text-white font-[Anuphan] transition-all">
             <div class="w-[49%] md:w-1/5 items-start mb-2">
-                <div class="flex px-2 md:px-4 py-2 md:py-3 mb-2 bg-[#bfff7f] justify-center font-bold text-[20px] md:text-[24px] text-black cursor-pointer duration-700 hover:brightness-120">
-                    D
-                </div>
+                <?php tier_level(esc_html($tier_SL));?>
                 <div class="flex justify-center">
                     <p>Story (low deficit)</p>
                 </div>
             </div>
 
             <div class="w-[49%] md:w-1/5 mb-2">
-                <div class="flex px-2 md:px-4 py-2 md:py-3 mb-2 bg-[#bfff7f] justify-center font-bold text-[20px] md:text-[24px] text-black cursor-pointer duration-700 hover:brightness-120">
-                    D
-                </div>
+                <?php tier_level(esc_html($tier_SH));?>
                 <div class="flex justify-center">
                     <p>Story (high deficit)</p>
                 </div>
             </div>
 
             <div class="w-[49%] md:w-1/5 mb-2">
-                <div class="flex px-2 md:px-4 py-2 md:py-3 mb-2 bg-[#ffff7f] justify-center font-bold text-[20px] md:text-[24px] text-black cursor-pointer duration-700 hover:brightness-120">
-                    C
-                </div>
+                <?php tier_level(esc_html($tier_B));?>
                 <div class="flex justify-center">
                     <p>Bossing</p>
                 </div>
             </div>
 
             <div class="w-[49%] md:w-1/5 items-end mb-2">
-                <div class="flex px-2 md:px-4 py-2 md:py-3 mb-2 bg-[#ff7f7f] justify-center font-bold text-[20px] md:text-[24px] text-black cursor-pointer duration-700 hover:brightness-120">
-                    S
-                </div>
+                <?php tier_level(esc_html($tier_PVP));?>
                 <div class="flex justify-center">
                     <p>PVP</p>
                 </div>
@@ -287,7 +297,7 @@
 
     </div>
     
-    <div id="investment_tips">
+    <div id="investment-tips" class="hidden">
 
         <div class="flex flex-row items-center mt-[25px] mb-[15px] pb-[6px] border-b-2"
         style="border-color: #d7bc57;">
@@ -296,14 +306,14 @@
             </svg>
             <h2 class="uppercase ml-2 text-white font-[Anuphan] font-bold text-[20px]">Skill Investment</h2>
         </div>
-        <div class="my-3 border-1 border-[#484950]">
-            <div class="h-13 bg-[#36373d] cursor-pointer">
+        <div class="my-3 border-1 border-[#484950] transition-all">
+            <div id="skill" class="h-13 bg-[#36373d] cursor-pointer">
                 <div class="flex flex-row h-full w-full py-1 px-4 items-center justify-between text-white font-[Anuphan]">
-                    <h2 class="justify-start">Skill Investment explained</h2>
-                    <svg class="justify-end rotate-y-180" style="transform: scaleY(1);" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="24"> <path fill="currentColor" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"</svg>
+                    <h2 class="justify-start select-none">Skill Investment explained</h2>
+                    <svg id="arrow-skill" class="justify-end duration-300" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="24"> <path fill="currentColor" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"</svg>
                 </div>
             </div>
-            <div id="skill_explanation" class="h-min-128 bg-[#2c2d33] py-5 px-6 text-white font-[Anuphan] leading-6.5 hidden">
+            <div id="skill_explanation" class="h-min-128 bg-[#2c2d33] py-5 px-6 text-white font-[Anuphan] leading-6.5 duration-500 hidden">
                 <p class="mb-3">Here's the explanation for all the numbers and colors used in the guide:</p>
                 <ul class="pl-4 mb-4 list-disc">
                     <li><strong>10/5/7 </strong> means upgrading Skill 1 to lvl 10, Skill 2 to lvl 5, and Burst Skill to lvl 7,</li>
@@ -349,7 +359,9 @@
             </div>
             <div class="h-min-16 md:h-16 grid md:grid-cols-[25%_30%_30%_15%] gap-3 md:gap-0 bg-[#36373d] justify-center md:justify-between border-t-1 md:border-t-0 border-x-1 border-b border-[#484950] text-[14px] py-2 md:py-0">
                 <div class="h-16 flex md:border-r-1 border-[#484950] items-center justify-center md:justify-start text-[16px] cursor-pointer">
-                    <div class="h-full w-15 mr-1.25 border-b-3 bg-white border-[#ffde7a]"></div>
+                    <div class="h-full w-15 mr-2 border-b-3 border-[#ffde7a] icon-bg-<?php if(esc_html($fav_item) == "No") { echo esc_html($rarity);} ?>">
+                        <div class="h-full w-full bg-no-repeat bg-cover" style="background-image: url('<?php echo esc_html($character_icon) ?>');"></div>                       
+                    </div>
                     <span><?php echo get_the_title($post->ID)?></span>
                 </div>
                 <div class="h-full flex flex-col md:border-r-1 border-[#484950] items-center justify-center">
@@ -374,14 +386,14 @@
             </svg>
             <h2 class="uppercase ml-2 text-white font-[Anuphan] font-bold text-[20px]">Gear Investment</h2>
         </div>
-        <div class="my-3 border-1 border-[#484950]">
-            <div class="h-13 bg-[#36373d] cursor-pointer">
+        <div class="my-3 border-1 border-[#484950] transition-all">
+            <div id="gear" class="h-13 bg-[#36373d] cursor-pointer">
                 <div class="flex flex-row h-full w-full py-1 px-4 items-center justify-between text-white font-[Anuphan]">
-                    <h2 class="justify-start">Gear Investment explained</h2>
-                    <svg class="justify-end rotate-y-180" style="transform: scaleY(1);" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="24"> <path fill="currentColor" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"</svg>
+                    <h2 class="justify-start select-none">Gear Investment explained</h2>
+                    <svg id="arrow-gear" class="justify-end duration-300" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="24"> <path fill="currentColor" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"</svg>
                 </div>
             </div>
-            <div id="gear_explanation" class="h-min-64 bg-[#2c2d33] py-5 px-6 text-white font-[Anuphan] leading-6.5 hidden">
+            <div id="gear_explanation" class="h-min-64 bg-[#2c2d33] py-5 px-6 text-white font-[Anuphan] leading-6.5 duration-500 ease-in-out hidden-sp">
                 <p class="mb-3">This Overload (OL) Recommendations and Priority guide unravels in detail everything you need about a character in terms of priority, overload targets (effects), and order of acquisition, alongside some notes to explain our thinking process.</p>
                 <p class="mb-3">For OL targets and order of acquisition, we decided to divide the target effects into several categories.</p>
                 <ul class="pl-4 mb-4 list-disc">
@@ -409,13 +421,13 @@
                     <p class="uppercase">Character</p>
                 </div>
                 <div class="h-full flex border-t-1 border-r-1 border-[#484950] items-center justify-center">
-                    <p class="uppercase">Essential</p>
+                    <p class="uppercase red">Essential</p>
                 </div>
                 <div class="h-full flex border-t-1 border-r-1 border-[#484950] justify-center items-center justify-center">
-                    <p class="uppercase">Ideal</p>
+                    <p class="uppercase green">Ideal</p>
                 </div>
                 <div class="h-full flex border-t-1 border-r-1 border-[#484950] items-center justify-center">
-                    <p class="uppercase">Passable</p>
+                    <p class="uppercase yellow">Passable</p>
                 </div>
                 <div class="h-full flex border-t-1 border-[#484950] items-center justify-center">
                     <p class="uppercase">Priority</p>
@@ -423,7 +435,9 @@
             </div>
             <div class="h-min-16 md:h-16 grid md:grid-cols-[15%_25%_25%_25%_10%] gap-3 md:gap-0 bg-[#2c2d33] justify-center md:justify-between border-t-1 md:border-t-0 border-x-1 border-b border-[#484950] text-[14px] py-2 md:py-0">
                 <div class="h-16 flex md:border-r-1 border-[#484950] items-center justify-center md:justify-start text-[16px] cursor-pointer">
-                    <div class="h-full w-15 mr-1.25 border-b-3 bg-white border-[#ffde7a]"></div>
+                    <div class="h-full w-15 mr-2 border-b-3 border-[#ffde7a] icon-bg-<?php if(esc_html($fav_item) == "No") { echo esc_html($rarity);} ?>">
+                        <div class="h-full w-full bg-no-repeat bg-cover" style="background-image: url('<?php echo esc_html($character_icon) ?>');"></div>                       
+                    </div>
                     <span><?php echo get_the_title($post->ID)?></span>
                 </div>
                 <div class="h-full flex flex-col md:border-r-1 border-[#484950] items-center justify-center">
@@ -465,7 +479,7 @@
                 </div>
                 <div class="h-min-20 p-3">
                     <div class="flex items-center justify-start">
-                        <div class="h-15 w-15 bg-white"></div>
+                        <div class="h-15 w-15 bg-[url('http://localhost/wordpress/wp-content/uploads/2025/04/cube_5_sm.png')] bg-cover bg-no-repeat"></div>
                         <p>Adjutant Cube</p>
                     </div>
                     <div class="flex items-center justify-start">

@@ -1,9 +1,61 @@
 <?php
 function enqueue_tailwind(){
     wp_enqueue_style('tailwindcss', get_template_directory_uri() . '/src/output.css', array(), '1.0', 'all');
-    wp_enqueue_script('main-js', get_template_directory_uri() . '/off-canvas.js', NULL, '1.0', true);
+    wp_enqueue_script('off-canvas-js', get_template_directory_uri() . '/off-canvas.js', NULL, '1.0', true);
+    if (is_single() && has_category('characters')) { 
+        wp_enqueue_script('character-scr-js', get_template_directory_uri() . '/character-scr.js', NULL, '1.0', true);
+    }
+    
 }
 add_action('wp_enqueue_scripts', 'enqueue_tailwind');
+
+/*
+function add_character_meta_boxes() {
+    add_meta_box('character_meta', 'Character Details', 'render_character_meta_box', 'post', 'normal', 'high');
+}
+add_action('add_meta_boxes', 'add_character_meta_boxes');
+
+function render_character_meta_box($post) {
+    $tier = get_post_meta($post->ID, 'tier', true);
+    $role = get_post_meta($post->ID, 'role', true);
+    ?>
+    <label>Tier Level:</label>
+    <select name="tier">
+        <option value="SSS" <?php selected($tier, 'SSS'); ?>>SSS</option>
+        <option value="SS" <?php selected($tier, 'SS'); ?>>SS</option>
+        <option value="S" <?php selected($tier, 'S'); ?>>S</option>
+        <option value="A" <?php selected($tier, 'A'); ?>>A</option>
+        <option value="B" <?php selected($tier, 'B'); ?>>B</option>
+        <option value="C" <?php selected($tier, 'C'); ?>>C</option>
+        <option value="D" <?php selected($tier, 'D'); ?>>D</option>
+    </select>
+    <br><br>
+
+    <label>Role:</label>
+    <select name="role">
+        <option value="Attacker" <?php selected($role, 'Attacker'); ?>>Attacker</option>
+        <option value="Supporter" <?php selected($role, 'Supporter'); ?>>Supporter</option>
+        <option value="Defender" <?php selected($role, 'Defender'); ?>>Defender</option>
+    </select>
+    <br><br>
+
+    <?php
+}
+
+function save_character_meta($post_id) {
+    if (array_key_exists('tier', $_POST)) {
+        update_post_meta($post_id, 'tier', $_POST['tier']);
+    }
+    if (array_key_exists('role', $_POST)) {
+        update_post_meta($post_id, 'role', $_POST['role']);
+    }
+}
+add_action('save_post', 'save_character_meta');
+*/
+
+function tier_level($tier){
+    echo ('<div class="flex px-2 md:px-4 py-2 md:py-3 mb-2 bg-' . $tier . ' justify-center font-bold text-[20px] md:text-[24px] text-black cursor-pointer duration-700 hover:brightness-120">' . $tier . '</div>');
+}
 
 function enqueue_custom_styles() {
     wp_enqueue_style('custom-styles', get_stylesheet_directory_uri() . '/custom.css', array(), '1.0');
@@ -19,13 +71,6 @@ add_action('after_setup_theme', 'adder');
 
 set_post_thumbnail_size(300, 200, true);
 add_image_size('Medium', 180, 246, true);
-
-function li_circle(){
-    echo ('<svg class="inline justify-center" height="10" width="10" xmlns="http://www.w3.org/2000/svg"><circle r="3" cx="5" cy="5" fill="white" /> </svg> ');
-}
-function li_circle_empty(){
-    echo ('<svg class="inline justify-center" height="10" width="10" xmlns="http://www.w3.org/2000/svg"><circle r="3" cx="5" cy="5"  stroke="white" stroke-width="1"/> </svg> ');
-}
 
 function register_custom_menu() {
     register_nav_menu('primary', __('Primary Menu', 'tailwind'));

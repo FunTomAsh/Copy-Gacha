@@ -50,3 +50,49 @@ a {
     color: #83ff72;
     opacity: 100%;
 }
+
+.bg-SSS{
+    background-color: #ffff7f;
+}
+.bg-SS{
+    background-color: #ff7f7f;
+}
+.bg-S{
+    background-color: #ffff7f;
+}
+.bg-A{
+    background-color: #ffff7f;
+}
+.bg-B{
+    background-color: #ffff7f;
+}
+.bg-C{
+    background-color: #ffff7f;
+}
+.bg-D{
+    background-color: #bfff7f;
+}
+.bg-E{
+    background-color: #ffff7f;
+}
+.bg-F{
+    background-color: #ffff7f;
+}
+
+.hidden-sp{
+    display: none;
+    transition: 0.5s ease-in-out;
+}
+
+.icon-bg-SSR{
+    background: linear-gradient(180deg,#885550,#c9a36a 53%);
+}
+.icon-bg-SR{
+    background: linear-gradient(180deg,#343659,#4172b9 53%);
+}
+.icon-bg-R{
+    background: linear-gradient(180deg,#885550,#c9a36a 53%);
+}
+.icon-bg-FI{
+    background: linear-gradient(180deg,#2a7f86,#34b6c1 53%);
+}
