@@ -13,24 +13,10 @@ a {
 .button{
     padding: 12px 18px;
 }
-
-.col-ssr{
-   color: #d7bc57;
-}
-
-.text-ssr{
-    text-decoration-color: #f7d882;;
-}
-
-.bg-ssr{
-    background-color: #d7bc57;
-}
-
 .yellow{
     color: #ffde7a;
     opacity: 100%;
 }
-
 .red {
     color: #ff5f5a;
     opacity: 100%;
@@ -52,19 +38,19 @@ a {
 }
 
 .bg-SSS{
-    background-color: #ffff7f;
+    background-color: #e04be0;
 }
 .bg-SS{
-    background-color: #ff7f7f;
+    background-color: #ef5350;
 }
 .bg-S{
-    background-color: #ffff7f;
+    background-color: #ff7f7f;
 }
 .bg-A{
-    background-color: #ffff7f;
+    background-color: #f9a2a2;
 }
 .bg-B{
-    background-color: #ffff7f;
+    background-color: #ffbf7f;
 }
 .bg-C{
     background-color: #ffff7f;
@@ -73,10 +59,10 @@ a {
     background-color: #bfff7f;
 }
 .bg-E{
-    background-color: #ffff7f;
+    background-color: #9df89d;
 }
 .bg-F{
-    background-color: #ffff7f;
+    background-color: #76f8f8;
 }
 
 .hidden-sp{
@@ -86,13 +72,57 @@ a {
 
 .icon-bg-SSR{
     background: linear-gradient(180deg,#885550,#c9a36a 53%);
+    border-bottom-color: #c9a36a;
 }
+.SSR{
+    color: #d7bc57;
+    border-color: #d7bc57;
+    text-decoration-color: #f7d882;
+    fill: #d7bc57;
+}
+.text-ssr{
+    text-decoration-color: #f7d882;
+}
+.SSR-bg{
+    background-color: #d7bc57;
+}
+
+
+
 .icon-bg-SR{
-    background: linear-gradient(180deg,#343659,#4172b9 53%);
+    background: linear-gradient(180deg,#343659,#8a5fcc 53%);
+    border-bottom-color: #8a5fcc;
+}
+.SR{
+    color: #c97ef5;
+    border-color: #c97ef5;
+    text-decoration-color: #c97ef5;
+    fill: #c956ff;
+}
+.SR-bg{
+    background-color: #c97ef5;
 }
 .icon-bg-R{
-    background: linear-gradient(180deg,#885550,#c9a36a 53%);
+    background: linear-gradient(180deg,#343659,#4172b9 53%);
+    border-bottom-color: #4172b9;
 }
+
+.R{
+    color: #2ca7ff;
+    text-decoration-color: #2ca7ff;
+    border-color: #2ca7ff;
+    fill: #2ca7ff;
+}
+.R-bg{
+    background-color: #2ca7ff;
+}
+
 .icon-bg-FI{
     background: linear-gradient(180deg,#2a7f86,#34b6c1 53%);
+    border-bottom-color: #34b6c1;
+}
+.FI{
+    color: #34b6c1;
+    background-color: #34b6c1;
+    border-color: #34b6c1;
 }

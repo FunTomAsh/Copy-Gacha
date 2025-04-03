@@ -30,7 +30,6 @@
     --font-weight-semibold: 600;
     --font-weight-bold: 700;
     --radius-lg: 0.5rem;
-    --ease-out: cubic-bezier(0, 0, 0.2, 1);
     --ease-in-out: cubic-bezier(0.4, 0, 0.2, 1);
     --default-transition-duration: 150ms;
     --default-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -229,9 +228,6 @@
   .z-1 {
     z-index: 1;
   }
-  .z-5 {
-    z-index: 5;
-  }
   .z-15 {
     z-index: 15;
   }
@@ -315,18 +311,6 @@
   }
   .mt-\[25px\] {
     margin-top: 25px;
-  }
-  .mr-1 {
-    margin-right: calc(var(--spacing) * 1);
-  }
-  .mr-1\.5 {
-    margin-right: calc(var(--spacing) * 1.5);
-  }
-  .mr-1\.25 {
-    margin-right: calc(var(--spacing) * 1.25);
-  }
-  .mr-1\.75 {
-    margin-right: calc(var(--spacing) * 1.75);
   }
   .mr-2 {
     margin-right: calc(var(--spacing) * 2);
@@ -420,9 +404,6 @@
   }
   .table {
     display: table;
-  }
-  .h-0 {
-    height: calc(var(--spacing) * 0);
   }
   .h-5 {
     height: calc(var(--spacing) * 5);
@@ -578,10 +559,6 @@
   .-translate-x-1\/2 {
     --tw-translate-x: calc(calc(1/2 * 100%) * -1);
     translate: var(--tw-translate-x) var(--tw-translate-y);
-  }
-  .rotate-y-180 {
-    --tw-rotate-y: rotateY(180deg);
-    transform: var(--tw-rotate-x) var(--tw-rotate-y) var(--tw-rotate-z) var(--tw-skew-x) var(--tw-skew-y);
   }
   .skew-x-\[-20deg\] {
     --tw-skew-x: skewX(-20deg);
@@ -749,8 +726,14 @@
   .border-\[\#ffde7a\] {
     border-color: #ffde7a;
   }
+  .border-b-\[\#2ca7ff\] {
+    border-bottom-color: #2ca7ff;
+  }
   .border-b-\[\#484950\] {
     border-bottom-color: #484950;
+  }
+  .border-b-\[\#c97ef5\] {
+    border-bottom-color: #c97ef5;
   }
   .border-b-\[\#d7bc57\] {
     border-bottom-color: #d7bc57;
@@ -779,32 +762,20 @@
   .bg-\[\#a592fc\] {
     background-color: #a592fc;
   }
-  .bg-\[\#bfff7f\] {
-    background-color: #bfff7f;
-  }
   .bg-\[\#c267ec\] {
     background-color: #c267ec;
   }
   .bg-\[\#f75058\] {
     background-color: #f75058;
   }
-  .bg-\[\#ff7f7f\] {
-    background-color: #ff7f7f;
-  }
   .bg-\[\#ff8ab5\] {
     background-color: #ff8ab5;
-  }
-  .bg-\[\#ffff7f\] {
-    background-color: #ffff7f;
   }
   .bg-white {
     background-color: var(--color-white);
   }
   .bg-\[url\(\'http\:\/\/localhost\/wordpress\/wp-content\/uploads\/2025\/02\/bg\.jpg\'\)\] {
     background-image: url('http://localhost/wordpress/wp-content/uploads/2025/02/bg.jpg');
-  }
-  .bg-\[url\(\'http\:\/\/localhost\/wordpress\/wp-content\/uploads\/2025\/04\/Anne_Mircale_Fairy_Icon_160x160\.png\'\)\] {
-    background-image: url('http://localhost/wordpress/wp-content/uploads/2025/04/Anne_Mircale_Fairy_Icon_160x160.png');
   }
   .bg-\[url\(\'http\:\/\/localhost\/wordpress\/wp-content\/uploads\/2025\/04\/cube_5_sm\.png\'\)\] {
     background-image: url('http://localhost/wordpress/wp-content/uploads/2025/04/cube_5_sm.png');
@@ -1136,10 +1107,6 @@
   .ease-in-out {
     --tw-ease: var(--ease-in-out);
     transition-timing-function: var(--ease-in-out);
-  }
-  .ease-out {
-    --tw-ease: var(--ease-out);
-    transition-timing-function: var(--ease-out);
   }
   .select-none {
     -webkit-user-select: none;

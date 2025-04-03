@@ -14,6 +14,12 @@ document.addEventListener("DOMContentLoaded", function () {
     const skillExpl = document.getElementById("skill_explanation");
     const arrowSkill = document.getElementById("arrow-skill");
 
+    const rarityColors = {
+        "SSR": "#d7bc57",
+        "SR": "#c97ef5",
+        "R": "#2ca7ff",
+    };
+
     let isSkillOpened = false;
     let isGearOpened = false;
 
@@ -43,6 +49,35 @@ document.addEventListener("DOMContentLoaded", function () {
         }
     });
 
+    function changeActiveButton(activeButton, activeSection) {
+
+        const rarity = activeButton.getAttribute("rarity");
+        const borderColor = rarityColors[rarity] || "#d7bc57";
+
+        [profilButton, reviewButton, investmentButton].forEach(button => {
+            button.classList.remove("opacity-100");
+            button.classList.add("opacity-70");
+            button.style.borderColor = "#33343a";
+            button.style.borderBottomColor = "#484950";
+            button.style.backgroundColor = "#2c2d33";
+        });
+
+        [profile, review, investment].forEach(section => section.classList.add("hidden"));
+
+        activeButton.classList.remove("opacity-70");
+        activeButton.classList.add("opacity-100");
+        activeButton.style.borderColor = "#484950";
+        activeButton.style.borderBottomColor = borderColor;
+        activeButton.style.backgroundColor = "#36373d";
+
+        activeSection.classList.remove("hidden");
+    }
+
+    profilButton.addEventListener("click", () => changeActiveButton(profilButton, profile));
+    reviewButton.addEventListener("click", () => changeActiveButton(reviewButton, review));
+    investmentButton.addEventListener("click", () => changeActiveButton(investmentButton, investment));
+
+/*
     profilButton.addEventListener("click", function () {
 
         reviewButton.classList.remove("opacity-100");
@@ -141,6 +176,6 @@ document.addEventListener("DOMContentLoaded", function () {
         reviewButton.classList.add("opacity-100");        
         review.classList.remove("hidden");
     });
-
+    */
 
 });
