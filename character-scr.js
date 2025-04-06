@@ -77,105 +77,58 @@ document.addEventListener("DOMContentLoaded", function () {
     reviewButton.addEventListener("click", () => changeActiveButton(reviewButton, review));
     investmentButton.addEventListener("click", () => changeActiveButton(investmentButton, investment));
 
-/*
-    profilButton.addEventListener("click", function () {
 
-        reviewButton.classList.remove("opacity-100");
-        reviewButton.classList.remove("border-b-[#d7bc57]");
-        reviewButton.classList.remove("bg-[#36373d]");
-        reviewButton.classList.remove("border-[#484950]");
-        reviewButton.classList.add("opacity-70");
-        reviewButton.classList.add("border-b-[#484950]");
-        reviewButton.classList.add("border-[#33343a]");
-        reviewButton.classList.add("bg-[#2c2d33]");
-        review.classList.add("hidden");
+    //skillz
+    function SkillUpd(skillNum) {
+        let level = 10;
+        const maxLevel = 10;
 
-        investmentButton.classList.remove("opacity-100");
-        investmentButton.classList.remove("border-b-[#d7bc57]");
-        investmentButton.classList.remove("border-[#484950]");
-        investmentButton.classList.remove("bg-[#36373d]");
-        investmentButton.classList.add("opacity-70");
-        investmentButton.classList.add("border-b-[#484950]");
-        investmentButton.classList.add("border-[#33343a]");
-        investmentButton.classList.add("bg-[#2c2d33]");
-        investment.classList.add("hidden");
+        const plus = document.getElementById(`s${skillNum}-plus`);
+        const minus = document.getElementById(`s${skillNum}-minus`);
+        const levelDisplay = document.getElementById(`skill${skillNum}-level`);
+        const descs = document.querySelectorAll(`.skill${skillNum}-desc`);
 
-        profilButton.classList.remove("opacity-70");
-        profilButton.classList.remove("border-b-[#484950]");
-        profilButton.classList.remove("bg-[#2c2d33]");
-        profilButton.classList.remove("border-[#33343a]");
-        profilButton.classList.add("border-b-[#d7bc57]");
-        profilButton.classList.add("bg-[#36373d]");
-        profilButton.classList.add("opacity-100");
-        profilButton.classList.add("border-[#484950]");        
-        profile.classList.remove("hidden");
-    });
+        function updateSkillDesc() {
+            descs.forEach(desc => desc.style.display = 'none');
+            const current1 = document.querySelector(`.skill${skillNum}-desc[data-level="${level}"]`);
+            if (current1) current1.style.display = '';
+            levelDisplay.textContent = level;
 
-    investmentButton.addEventListener("click", function () {
+            if (level <= 1) {
+                minus.classList.remove("opacity-60", "hover:opacity-90", "cursor-pointer");
+                minus.classList.add("opacity-20");
+            } else {
+                minus.classList.add("opacity-60", "hover:opacity-90", "cursor-pointer");
+                minus.classList.remove("opacity-20");
+            }
+        
+            if (level >= maxLevel) {
+                plus.classList.remove("opacity-60", "hover:opacity-90", "cursor-pointer");
+                plus.classList.add("opacity-20");
+            } else {
+                plus.classList.add("opacity-60", "hover:opacity-90", "cursor-pointer");
+                plus.classList.remove("opacity-20");
+            }
+        }
 
-        reviewButton.classList.remove("opacity-100");
-        reviewButton.classList.remove("border-b-[#d7bc57]");
-        reviewButton.classList.remove("bg-[#36373d]");
-        reviewButton.classList.remove("border-[#484950]");
-        reviewButton.classList.add("opacity-70");
-        reviewButton.classList.add("border-b-[#484950]");
-        reviewButton.classList.add("border-[#33343a]");
-        reviewButton.classList.add("bg-[#2c2d33]");
-        review.classList.add("hidden");
+        updateSkillDesc();
 
-        profilButton.classList.remove("opacity-100");
-        profilButton.classList.remove("border-b-[#d7bc57]");
-        profilButton.classList.remove("bg-[#36373d]");
-        profilButton.classList.remove("border-[#484950]");
-        profilButton.classList.add("opacity-70");
-        profilButton.classList.add("border-b-[#484950]");
-        profilButton.classList.add("border-[#33343a]");
-        profilButton.classList.add("bg-[#2c2d33]");
-        profile.classList.add("hidden");
+        plus.addEventListener("click", () => {
+            if (level < maxLevel) {
+                level++;
+                updateSkillDesc();
+            }
+        });
 
-        investmentButton.classList.remove("opacity-70");
-        investmentButton.classList.remove("bg-[#2c2d33]");
-        investmentButton.classList.remove("border-b-[#484950]");
-        investmentButton.classList.remove("border-[#33343a]");
-        investmentButton.classList.add("border-b-[#d7bc57]");
-        investmentButton.classList.add("bg-[#36373d]");
-        investmentButton.classList.add("border-[#484950]");  
-        investmentButton.classList.add("opacity-100");        
-        investment.classList.remove("hidden");
-    });
+        minus.addEventListener("click", () => {
+            if (level > 1) {
+                level--;
+                updateSkillDesc();
+            }
+        });
+    }
 
-    reviewButton.addEventListener("click", function () {
-
-        investmentButton.classList.remove("opacity-100");
-        investmentButton.classList.remove("border-b-[#d7bc57]");
-        investmentButton.classList.remove("bg-[#36373d]");
-        investmentButton.classList.remove("border-[#484950]"); 
-        investmentButton.classList.add("opacity-70");
-        investmentButton.classList.add("border-b-[#484950]");
-        investmentButton.classList.add("bg-[#2c2d33]");
-        investmentButton.classList.add("border-[#33343a]");
-        investment.classList.add("hidden");
-
-        profilButton.classList.remove("opacity-100");
-        profilButton.classList.remove("border-b-[#d7bc57]");
-        profilButton.classList.remove("bg-[#36373d]");
-        profilButton.classList.remove("border-[#484950]"); 
-        profilButton.classList.add("opacity-70");
-        profilButton.classList.add("border-b-[#484950]");
-        profilButton.classList.add("bg-[#2c2d33]");
-        profilButton.classList.add("border-[#33343a]");
-        profile.classList.add("hidden");
-
-        reviewButton.classList.remove("bg-[#2c2d33]");
-        reviewButton.classList.remove("opacity-70");
-        reviewButton.classList.remove("border-b-[#484950]");
-        reviewButton.classList.remove("border-[#33343a]");
-        reviewButton.classList.add("bg-[#36373d]");
-        reviewButton.classList.add("border-[#484950]"); 
-        reviewButton.classList.add("border-b-[#d7bc57]");
-        reviewButton.classList.add("opacity-100");        
-        review.classList.remove("hidden");
-    });
-    */
-
+    SkillUpd(1);
+    SkillUpd(2);
+    SkillUpd(3);
 });
