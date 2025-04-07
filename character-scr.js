@@ -152,8 +152,8 @@ document.addEventListener("DOMContentLoaded", function () {
                 const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
                 const scrollLeft = window.pageXOffset || document.documentElement.scrollLeft;
 
-                popover.style.top = `${rect.top - scrollTop}px`;
-                popover.style.left = `${rect.right - scrollLeft + 8}px`;
+                popover.style.top = `${0}px`;
+                popover.style.left = `${rect.width}px`;
 
                 popover.classList.remove('hidden');
                 popover.style.opacity = 1;

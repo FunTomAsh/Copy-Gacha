@@ -262,9 +262,17 @@
                 <div data-popover="<?php echo $id; ?>" class="popover-btn flex items-center py-2 px-3 mb-3 mr-3 border-b-4 border-[#484950] cursor-pointer bg-[#36373d] opacity-80 hover:opacity-100 duration-700 text-white">
                     <?php echo esc_html($speciality); ?>
                 </div>
-                <div id="<?php echo $id; ?>" class="popover-content absolute hidden transition-opacity z-50 text-white shadow-lg duration-700" style="opacity: 0">
-                    <h3 class="bg-[#2b2c31] font-bold px-4 py-3"><?php echo esc_html($speciality); ?></h3>
-                    <div class="flex flex-row popover-body bg-[#36373d] p-4 text-[14px]"><?php echo esc_html($desc); ?></div>
+                <div id="<?php echo $id; ?>" class="popover-content flex flex-row absolute w-min-10 hidden transition-opacity z-50 text-white duration-700" style="opacity: 0">
+                    <div class="translate-y-4">
+                        <svg height="16" width="8" xmlns="http://www.w3.org/2000/svg">
+                            <polygon points="0,8 8,0 8,16" style="fill:#2b2c31;" />
+                        </svg>
+                    </div>
+                    <div class="shadow-xl">
+                        <h3 class="bg-[#2b2c31] font-bold px-4 py-3"><?php echo esc_html($speciality); ?></h3>
+                        <div class="h-max-40 flex popover-body bg-[#36373d] p-4 text-[14px]"><?php echo esc_html($desc); ?></div>
+                    </div>
+
                 </div>
             </div>
             <?php endwhile; endif;?>
