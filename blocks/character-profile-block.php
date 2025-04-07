@@ -256,9 +256,16 @@
                 while (have_rows('specialities')): the_row();
                 $speciality = get_sub_field('speciality');
                 $desc = get_sub_field('spec_desc');
-                ?>
-            <div class="flex items-center py-2 px-3 mb-3 mr-3 border-b-4 border-[#484950] cursor-pointer bg-[#36373d] opacity-80 hover:opacity-100 duration-700 text-white">
-                <?php echo esc_html($speciality); ?>
+                $id = uniqid('popover_');
+            ?>
+            <div class="relative">
+                <div data-popover="<?php echo $id; ?>" class="popover-btn flex items-center py-2 px-3 mb-3 mr-3 border-b-4 border-[#484950] cursor-pointer bg-[#36373d] opacity-80 hover:opacity-100 duration-700 text-white">
+                    <?php echo esc_html($speciality); ?>
+                </div>
+                <div id="<?php echo $id; ?>" class="popover-content absolute hidden transition-opacity z-50 text-white shadow-lg duration-700" style="opacity: 0">
+                    <h3 class="bg-[#2b2c31] font-bold px-4 py-3"><?php echo esc_html($speciality); ?></h3>
+                    <div class="flex flex-row popover-body bg-[#36373d] p-4 text-[14px]"><?php echo esc_html($desc); ?></div>
+                </div>
             </div>
             <?php endwhile; endif;?>
         </div>

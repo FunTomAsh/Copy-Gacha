@@ -131,4 +131,38 @@ document.addEventListener("DOMContentLoaded", function () {
     SkillUpd(1);
     SkillUpd(2);
     SkillUpd(3);
+
+    const buttons = document.querySelectorAll('.popover-btn');
+
+    function closeAllPopovers() {
+        document.querySelectorAll('.popover-content').forEach(pop => (pop.style.opacity = 0, pop.classList.add('hidden')));
+    }
+
+    buttons.forEach(button => {
+        button.addEventListener('click', (e) => {
+            e.stopPropagation();
+            const targetId = button.getAttribute('data-popover');
+            const popover = document.getElementById(targetId);
+
+            const isVisible = !popover.classList.contains('hidden');
+            closeAllPopovers();
+
+            if (!isVisible) {
+                const rect = button.getBoundingClientRect();
+                const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+                const scrollLeft = window.pageXOffset || document.documentElement.scrollLeft;
+
+                popover.style.top = `${rect.top - scrollTop}px`;
+                popover.style.left = `${rect.right - scrollLeft + 8}px`;
+
+                popover.classList.remove('hidden');
+                popover.style.opacity = 1;
+            }
+        });
+    });
+
+    document.addEventListener('click', () => {
+        closeAllPopovers();
+    });
+
 });
