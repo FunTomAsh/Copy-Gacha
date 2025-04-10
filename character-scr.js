@@ -132,6 +132,8 @@ document.addEventListener("DOMContentLoaded", function () {
     SkillUpd(2);
     SkillUpd(3);
 
+
+    //specialities desc placemenet
     const buttons = document.querySelectorAll('.popover-btn');
 
     function closeAllPopovers() {
@@ -149,8 +151,6 @@ document.addEventListener("DOMContentLoaded", function () {
 
             if (!isVisible) {
                 const rect = button.getBoundingClientRect();
-                const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
-                const scrollLeft = window.pageXOffset || document.documentElement.scrollLeft;
 
                 popover.style.top = `${0}px`;
                 popover.style.left = `${rect.width}px`;

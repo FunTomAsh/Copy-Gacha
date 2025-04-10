@@ -149,4 +149,6 @@ document.addEventListener("DOMContentLoaded", function () {
             //offCanvasContent.style.backgroundImage = "";
         });
     });
+
+    
 });

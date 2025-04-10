@@ -6,7 +6,7 @@
     <link href="./src/output.css" rel="stylesheet">
     <?php wp_head() ?>
 </head>
-<body <?php body_class(); ?> style="scrollbar-color: #1c1d21 #36373d; scrollbar-width: thin;">
+<body <?php body_class(); ?> style="scrollbar-color: #1c1d21, #36373d; scrollbar-width: thin;">
 
 <div class="flex flex-row h-[100%] w-[100%]">
     <div id="left-menu" class="hidden lg:block fixed top-0 left-0 w-[260px] flex flex-col border-r border-[#33343a] bg-[#1c1d21]">
@@ -108,7 +108,7 @@
                 </div>
             </div>
     </div>
-    <div id="right-main" class="flex flex-col w-full min-h-[100vh] lg:ml-[260px]">
+    <div id="right-main" class="flex flex-col w-full h-min-[100vh] lg:ml-[260px]">
         <nav id="top-nav" class="fixed top-0 left-0 lg:left-[260px] right-0 h-[60px] lg:h-[75px] flex flex-row bg-[#1c1d21] border-b-1 border-[#33343a] items-center justify-between py-4 px-2 z-15">
             <ul class="p-2 flex flex-row jusify-start items-center" >
                 <li class="hidden lg:inline-block px-[12px] py-[10px]">
@@ -152,8 +152,8 @@
                 </a></li>
             </ul>
         </nav>
-        <div id="main-body" class="relative w-full min-h-[100vh-75px] bg-[#23242a] px-[20px] lg:px-[75px] pt-[40px] lg:pt-[75px] pb-[20px] z-1">
-            <div class="absolute top-0 left-0 w-full h-[1000px] bg-no-repeat bg-cover z-[-5] overflow-x-hidden"
+        <div id="main-body" class="relative w-full h-min-[100vh-75px] bg-[#23242a] px-[20px] lg:px-[75px] pt-[40px] lg:pt-[75px] pb-[20px] z-1 overflow-x-hidden">
+            <div class="absolute top-0 left-0 w-full h-[1000px] bg-no-repeat bg-cover z-[-5] overflow-y-hidden"
             style="background-image: 
                 linear-gradient(to bottom, rgba(35, 36, 42, 0), rgba(35, 36, 42, 1)),
                 url('http://localhost/wordpress/wp-content/uploads/2025/03/bg-fs.jpg'); 

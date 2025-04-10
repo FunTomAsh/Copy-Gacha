@@ -37,6 +37,7 @@
     $normal_atk = get_field('normal_attack');
     
 ?>
+
 <div class="flex flex-row items-center mt-[25px] mb-[15px] pb-[6px] border-b-2 <?php echo esc_html($rarity); ?>">
     <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="square" class="<?php echo esc_html($rarity); ?>" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" width="18">
         <path d="M0 96C0 60.65 28.65 32 64 32H384C419.3 32 448 60.65 448 96V416C448 451.3 419.3 480 384 480H64C28.65 480 0 451.3 0 416V96z"></path>
@@ -45,7 +46,7 @@
 </div>
 
 <div class="text-white font-[Anuphan] text-[18px] mb-3">
-    <h2 class="inline"><strong><?php echo get_the_title($post_id)?></strong> is a <strong class="<?php echo esc_html($rarity); ?>"><?php echo esc_html($rarity); ?> rarity</strong> <strong>Burst</strong><?php get_icon($burst)?> character from the <strong><?php echo esc_html($role) ?></strong> class, who wields a <strong><?php echo esc_html($weapon); get_icon($weapon); ?></strong> weapon and belongs to the <strong><?php echo esc_html($element); get_icon($element); ?></strong> element. She’s part of the <strong><?php echo esc_html($faction); get_icon($faction); ?></strong> faction. </h2>
+    <h2 class="inline"><strong><?php echo get_the_title($post_id)?></strong> is a <strong class="<?php echo esc_html($rarity); ?>"><?php echo esc_html($rarity); ?> rarity</strong> <strong>Burst</strong><?php get_icon($burst, 30,35)?> character from the <strong><?php echo esc_html($role) ?></strong> class, who wields a <strong><?php echo esc_html($weapon); get_icon($weapon, 30,35); ?></strong> weapon and belongs to the <strong><?php echo esc_html($element); get_icon($element, 30, 35); ?></strong> element. She’s part of the <strong><?php echo esc_html($faction); get_icon($faction, 30, 35); ?></strong> faction. </h2>
     <p class="inline"><?php echo esc_html($introducion); ?></p>
 </div>
 
@@ -251,18 +252,18 @@
             </svg>
             <h2 class="uppercase ml-2 text-white font-[Anuphan] font-bold text-[20px]">Specialties</h2>
         </div>
-        <div class="flex flex-wrap items-center transition-all">
+        <div class="flex flex-wrap transition-all">
             <?php if(have_rows('specialities')) : 
                 while (have_rows('specialities')): the_row();
                 $speciality = get_sub_field('speciality');
                 $desc = get_sub_field('spec_desc');
                 $id = uniqid('popover_');
             ?>
-            <div class="relative">
+            <div class="relative flex items-center">
                 <div data-popover="<?php echo $id; ?>" class="popover-btn flex items-center py-2 px-3 mb-3 mr-3 border-b-4 border-[#484950] cursor-pointer bg-[#36373d] opacity-80 hover:opacity-100 duration-700 text-white">
                     <?php echo esc_html($speciality); ?>
                 </div>
-                <div id="<?php echo $id; ?>" class="popover-content flex flex-row absolute w-min-10 hidden transition-opacity z-50 text-white duration-700" style="opacity: 0">
+                <div id="<?php echo $id; ?>" class="h-min-full w-100 popover-content flex flex-row absolute w-min-10 hidden transition-opacity ease-in-out z-50 text-white duration-700" style="opacity: 0">
                     <div class="translate-y-4">
                         <svg height="16" width="8" xmlns="http://www.w3.org/2000/svg">
                             <polygon points="0,8 8,0 8,16" style="fill:#2b2c31;" />
@@ -444,7 +445,7 @@
                 if(!isset($priority)) {$priority = "<p>-</p>";}
             ?>
             <div class="h-min-16 grid md:grid-cols-[25%_30%_30%_15%] gap-3 md:gap-0 bg-[#36373d] items-center justify-center md:justify-between border-t-1 md:border-t-0 border-x-1 border-b border-[#484950] text-[14px] py-2 md:py-0">
-                <div class="h-full flex md:border-r-1 border-[#484950] items-center justify-center md:justify-start text-[16px] cursor-pointer">
+                <div class="char_prof h-full flex md:border-r-1 border-[#484950] items-center justify-center md:justify-start text-[16px] cursor-pointer" data-post-id="<?php echo get_the_ID(); ?>">
                     <div class="h-16 w-15 mr-2 border-b-4 icon-bg-<?php if(esc_html($fav_item) == "No") { echo esc_html($rarity);} else { echo "FI";} ?>">
                         <div class="h-full w-full bg-no-repeat bg-cover" style="background-image: url('<?php echo esc_html($character_icon) ?>');"></div>                       
                     </div>
@@ -531,7 +532,7 @@
                 if(!isset($explanation)) {$explanation = "-";}
             ?>
             <div class="h-min-16 grid md:grid-cols-[15%_25%_25%_25%_10%] gap-3 md:gap-0 bg-[#2c2d33] items-center justify-center md:justify-between border-t-1 md:border-t-0 border-x-1 border-b border-[#484950] text-[14px] py-2 md:py-0">
-                <div class="h-full flex border-[#484950] md:border-r-1 items-center justify-center md:justify-start text-[16px] cursor-pointer">
+                <div class="char_prof h-full flex border-[#484950] md:border-r-1 items-center justify-center md:justify-start text-[16px] cursor-pointer" data-post-id="<?php echo get_the_ID(); ?>">
                     <div class="h-16 w-15 mr-2 border-b-4 icon-bg-<?php if(esc_html($fav_item) == "No") { echo esc_html($rarity);} else { echo "FI";} ?>">
                         <div class="h-full w-full bg-no-repeat bg-cover" style="background-image: url('<?php echo esc_html($character_icon) ?>');"></div>                       
                     </div>
