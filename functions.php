@@ -5,7 +5,6 @@ function enqueue_tailwind(){
     //wp_enqueue_script('char-popout-js', get_template_directory_uri() . '/char-popout.js', NULL, '1.0', true);
     if (is_single() && has_category('characters')) { 
         wp_enqueue_script('character-scr-js', get_template_directory_uri() . '/character-scr.js', NULL, '1.0', true);
-        wp_enqueue_script('char-popout', get_template_directory_uri() . '/char-popout.js', [], null, true);
     }
     
 }
@@ -113,38 +112,6 @@ function get_icon($item_name, $size_w, $size_h){
     $icon = $icons[$item_name] ?? "#";
     echo (' <img width="' . esc_html($size_w) . '" height="' . esc_html($size_h) . '" class="inline" loading="lazy" src="' . esc_url($icon) . '" alt="' . $item_name . '">');
 }
-
-add_action('wp_ajax_char_popout', 'load_char_popout');
-add_action('wp_ajax_nopriv_char_popout', 'load_char_popout');
-
-function load_char_popout() {
-    $post_id = intval($_GET['post_id'] ?? 0);
-
-    if (!$post_id) {
-        wp_send_json_error("Missing post ID", 400);
-        wp_die();
-    }
-
-    $post = get_post($post_id);
-    if ($post) {
-        setup_postdata($post);
-    } else {
-        wp_send_json_error("Invalid post ID", 404);
-        wp_die();
-    }
-    include get_template_directory() . '/blocks/char-popout.php';
-
-    wp_reset_postdata();
-    wp_die();
-}
-function enqueue_char_popout_script() {
-    
-
-    wp_localize_script('char-popout', 'ajax_object', [
-        'ajax_url' => admin_url('admin-ajax.php')
-    ]);
-}
-add_action('wp_enqueue_scripts', 'enqueue_char_popout_script');
 
 
 function enqueue_custom_styles() {

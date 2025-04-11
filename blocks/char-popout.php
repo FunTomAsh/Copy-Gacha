@@ -31,7 +31,7 @@
     if(!isset($faction)) {$faction = "Faction";}
 ?>
 
-<div id="char" class="absolute flex flex-col items-center h-min-88 w-85 z-100 text-white" style="transform: translate(0px, 0px);">
+<div class="flex flex-col items-center h-min-88 w-85 text-white">
     <div class="flex flex-col items-center justify-between h-86 w-full bg-[#23242a] border-1 border-[#484950] p-3">
         <div class="flex flex-col items-center justify-center">
             <div class="h-20 w-20 mr-2 border-b-4 icon-bg-<?php if(esc_html($fav_item) == "No") { echo esc_html($rarity);} else { echo "FI";} ?>">

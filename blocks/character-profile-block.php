@@ -444,6 +444,14 @@
                 $priority = get_field('gear_investment_priority');
                 if(!isset($priority)) {$priority = "<p>-</p>";}
             ?>
+            <div id="char-popout" class="hidden absolute z-100">
+                <?php
+                    //setup_postdata($post_id);
+                    include get_template_directory() . '/blocks/char-popout.php';
+                    wp_enqueue_script('char-popout', get_template_directory_uri() . '/char-popout.js', [], null, true);
+                    //wp_reset_postdata();
+                ?>
+            </div>
             <div class="h-min-16 grid md:grid-cols-[25%_30%_30%_15%] gap-3 md:gap-0 bg-[#36373d] items-center justify-center md:justify-between border-t-1 md:border-t-0 border-x-1 border-b border-[#484950] text-[14px] py-2 md:py-0">
                 <div class="char_prof h-full flex md:border-r-1 border-[#484950] items-center justify-center md:justify-start text-[16px] cursor-pointer" data-post-id="<?php echo get_the_ID(); ?>">
                     <div class="h-16 w-15 mr-2 border-b-4 icon-bg-<?php if(esc_html($fav_item) == "No") { echo esc_html($rarity);} else { echo "FI";} ?>">
