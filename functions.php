@@ -86,21 +86,25 @@ function get_cube($cube_name){
 function get_icon($item_name, $size_w, $size_h){
 
     $icons = [
-        "I"   => "http://localhost/wordpress/wp-content/uploads/2025/04/type_2_bg.png",
+        "I"   => "http://localhost/wordpress/wp-content/uploads/2025/05/type_1.png",
         "II"   => "http://localhost/wordpress/wp-content/uploads/2025/04/type_2_bg.png",
-        "III"   => "http://localhost/wordpress/wp-content/uploads/2025/04/type_2_bg.png",
+        "III"   => "http://localhost/wordpress/wp-content/uploads/2025/05/type_3.png",
+
+        "Attacker" => "http://localhost/wordpress/wp-content/uploads/2025/05/class_attacker.png",
+        "Defender"   => "http://localhost/wordpress/wp-content/uploads/2025/05/class_defender.png",
+        "Supporter"   => "http://localhost/wordpress/wp-content/uploads/2025/05/class_support.png",
 
         "Fire"   => "http://localhost/wordpress/wp-content/uploads/2025/04/wind_bg.png",
         "Water"   => "http://localhost/wordpress/wp-content/uploads/2025/04/wind_bg.png",
         "Electric"   => "http://localhost/wordpress/wp-content/uploads/2025/04/wind_bg.png",
         "Iron"   => "http://localhost/wordpress/wp-content/uploads/2025/04/wind_bg.png",
-        "Wind"   => "http://localhost/wordpress/wp-content/uploads/2025/04/wind_bg.png",
+        "Wind"   => "http://localhost/wordpress/wp-content/uploads/2025/05/element_wind.png",
 
-        "SMG"   => "http://localhost/wordpress/wp-content/uploads/2025/04/weapon_rocket.png",
-        "Assault Rifle"   => "http://localhost/wordpress/wp-content/uploads/2025/04/weapon_rocket.png",
-        "Shotgun"   => "http://localhost/wordpress/wp-content/uploads/2025/04/weapon_rocket.png",
-        "Sniper Rifle"   => "http://localhost/wordpress/wp-content/uploads/2025/04/weapon_rocket.png",
-        "Machine Gun"   => "http://localhost/wordpress/wp-content/uploads/2025/04/weapon_rocket.png",
+        "SMG"   => "http://localhost/wordpress/wp-content/uploads/2025/05/weapon_smg.png",
+        "Assault Rifle"   => "http://localhost/wordpress/wp-content/uploads/2025/05/weapon_ar.png",
+        "Shotgun"   => "http://localhost/wordpress/wp-content/uploads/2025/05/weapon_shotgun.png",
+        "Sniper Rifle"   => "http://localhost/wordpress/wp-content/uploads/2025/05/weapon_sniper.png",
+        "Machine Gun"   => "http://localhost/wordpress/wp-content/uploads/2025/05/weapon_minigun.png",
         "Rocket Launcher"   => "http://localhost/wordpress/wp-content/uploads/2025/04/weapon_rocket.png",
 
         "Elysion"   => "http://localhost/wordpress/wp-content/uploads/2025/04/man_missilis.png",

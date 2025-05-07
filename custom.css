@@ -126,3 +126,43 @@ a {
     background-color: #34b6c1;
     border-color: #34b6c1;
 }
+
+.char-filter-btn-sec{
+    flex: 1 1 auto;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    transition-property: all;
+    transition-duration: 500ms;
+    margin-left: -1px;
+    margin-right: -1px;
+    padding-top: 7px;
+    padding-bottom: 7px; 
+    padding-left: 14px;
+    padding-right: 14px;
+    cursor: pointer;
+    border-left-width: 1px;
+    border-left-color: #484950;
+    border-right-width: 1px;
+    border-right-color: #484950;
+    background-color: #36373d;   
+}
+.char-filter-btn-sec:hover{
+    background-color:#47484e ;
+}
+
+.active{
+    color: white !important;
+    background-color: #009eec !important;
+}
+
+.grid-auto-fill {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 140px);
+    row-gap: 10px;
+    column-gap: 5px;
+}
+
+.just-bet{
+    justify-content: space-between !important;
+}
