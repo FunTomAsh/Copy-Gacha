@@ -7,6 +7,8 @@ Character post page, from characters category: http://localhost/wordpress/charac
 (http://localhost/wordpress/characters/miracle-fairy-anne/)
 Added skill level selection for each skill.
 
+http://localhost/wordpress/characters/ is still under construction.
+
 To install, import database and ACF database from "additional files" folder.
 
 
